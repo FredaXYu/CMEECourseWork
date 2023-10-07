@@ -1,0 +1,6 @@
+02 Oct - 06 Oct 
+
+Unix and Linux
+Shell Scripting
+Git
+LaTex

@@ -1,0 +1,5 @@
+https://mhasoba.github.io/TheMulQuaBio/notebooks/04-LaTeX.html
+
+First example
+
+Test CompileLaTeX.sh with FirstExample.tex and bring it under verson control underweek1 in your repository. Make sure that CompileLaTeX.sh will work if somebody else ran it from their computer using FirstExample.tex as an input.
