@@ -1,0 +1,3 @@
+
+- The routes mentioned in the book should be found in: 
+https://github.com/mhasoba/TheMulQuaBio/tree/master/content/data/fasta
