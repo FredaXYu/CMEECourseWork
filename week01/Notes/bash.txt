@@ -1,0 +1,40 @@
+
+the bash shell (or terminal)
+
+Bash enables you to perform many everyday tasks on your computer without having to invoke another language that might require installation or updating.
+
+there is a commented out exit command at the end of the script. Uncommenting it will not change the behavior of the script, but will allow you to generate a error code, and if the command is inserted in the middle of the script, to stop the code at that point. 
+
+Why #!/bin/sh is a standard location ?  directory? 
+
+------------------------
+
+What do you use bash to do? 
+
+那么你用 bash 做什么呢？你会使用它查出计算机内都存放了哪些文件，文件里又是什么内容。你会使用它来运行别的程序，这些程序可以对计算机作出各种改变：从编辑文件和图片到转化他们，从移动、复制文件到创建自动备份，从下载新程序的源码到编译、运行他们。(cr: https://zhuanlan.zhihu.com/p/328045475)
+
+---------------------
+
+What is Shell? 
+
+Shell 是一个用 C 语言编写的程序，它是用户使用 Linux 的桥梁。Shell 既是一种命令语言，又是一种程序设计语言。Shell 是指一种应用程序，这个应用程序提供了一个界面，用户通过这个界面访问操作系统内核的服务。
+
+---------------------------
+
+在计算领域中，Shebang（也称为Hashbang）是一个由井号和叹号构成的字符序列#!，其出现在文本文件的第一行的前两个字符。 在文件中存在Shebang的情况下，类Unix操作系统的程序加载器会分析Shebang后的内容，将这些内容作为解释器指令，并调用该指令，并将载有Shebang的文件路径作为该解释器的参数
+
+---------------------------------
+
+[IMPORTANT]
+
+Windows OS VSCode, with WSL Ubuntu terminal, can't run the script: bash myscript.sh
+
+root@DESKTOP-9D7BS8T:/mnt/c/Users/yxy/Github_desktop/CMEECourseWork# bash myscript.sh
+bash: myscript.sh: No such file or directory
+
+Windows WSL, can run the script! 
+
+
+
+
+

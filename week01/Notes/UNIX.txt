@@ -1,0 +1,5 @@
+forward slash / 
+~ Home directory path
+
+You can also combine commands using &&. For example,
+cd CMEECourseWork && cd CMEECourseWork
