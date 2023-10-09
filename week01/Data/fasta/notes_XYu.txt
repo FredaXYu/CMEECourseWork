@@ -1,0 +1,4 @@
+I guess the answers are: 
+
+Count how many lines there are in each file: wc *
+28 127 78103 
