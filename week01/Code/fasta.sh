@@ -6,11 +6,15 @@
 
 ##########################################################################################
 
-# test
+# test  - I can make it as a class
 echo -e "\nThis is a shell script! \n"
 
 
-# Count how many lines there are in each file
+# Count how many lines there are in each file - FASTA file
+# 1. Count how many lines in one file: 
+wc -l
+
+
 echo wc -l *
 
 
