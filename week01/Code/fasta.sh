@@ -18,7 +18,7 @@ Assignment website address: https://mhasoba.github.io/TheMulQuaBio/notebooks/01-
 
 # test  - I can make it as a class
 echo -e "\nThis is a shell script! \n"   # passed on 10 Oct 17:42   not printed out \n
-echo "\nThis is a shell script! \n"   # passed on 10 Oct 17:42     priented out \n
+echo "\nThis is a shell script! \n"   # passed on 10 Oct 17:42     printed out \n
 
 
 #############################################################################
@@ -49,16 +49,15 @@ tail -n +2 ../Data/fasta/E.coli.fasta   # can work 10 Oct
 # Count the sequence length of this genome
 wc ../Data/fasta/E.coli.fasta/E.coli.fasta  # can work 10 Oct
 
+# Should tail all the codes from the second line
+
 
 #############################################################################
 # Count the matches of a particular sequence, “ATGC” in the genome of E. coli (hint: Start by removing the first line and 
 # ######## IMPORTANT removing newline characters)
 # hint: Start by removing the first line and removing newline characters????
 
-
-grep  | wc
-
-
+grep -o | wc 
 
 #############################################################################
 # Compute the AT/GC ratio. That is, the (A+T)/(G+C) ratio (as a single number). This is a summary 
