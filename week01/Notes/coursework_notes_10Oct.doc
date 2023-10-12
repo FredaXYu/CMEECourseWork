@@ -1,0 +1,131 @@
+11 Oct 2023 VSCode record
+
+
+    ...:     print("Inside the function, the value _a_local is", _a_local)
+    ...:     print("Inside the function, the value of _a_global is", _a_global)
+    ...: 
+    ...: a_function()
+    ...: 
+    ...: print("Outside the function, the value of _a_global is", _a_global)
+Inside the function, the value _a_local is 4
+Inside the function, the value of _a_global is 10
+Outside the function, the value of _a_global is 10
+
+In [30]: _a_global = 10
+    ...: 
+    ...: print("Before calling a_function, outside the function, the value of _a_global is", _a_global)
+    ...: 
+    ...: def a_function():
+    ...:     global _a_global
+    ...:     _a_global = 5
+    ...:     _a_local = 4
+    ...: 
+    ...:     print("Inside the function, the value of _a_global is", _a_global)
+    ...:     print("Inside the function, the value _a_local is", _a_local)
+    ...: 
+    ...: a_function()
+    ...: 
+    ...: print("After calling a_function, outside the function, the value of _a_global now is", _a_global)
+Before calling a_function, outside the function, the value of _a_global is 10
+Inside the function, the value of _a_global is 5
+Inside the function, the value _a_local is 4
+After calling a_function, outside the function, the value of _a_global now is 5
+
+In [31]: def a_function():
+    ...:     _a_global = 10
+    ...: 
+    ...:     def _a_function2():
+    ...:         global _a_global
+    ...:         _a_global = 20
+    ...: 
+    ...:     print("Before calling a_function2, value of _a_global is", _a_global)
+    ...: 
+    ...:     _a_function2()
+    ...: 
+    ...:     print("After calling a_function2, value of _a_global is", _a_global)
+    ...: 
+    ...: a_function()
+    ...: 
+    ...: print("The value of a_global in main workspace / namespace now is", _a_global)
+Before calling a_function2, value of _a_global is 10
+After calling a_function2, value of _a_global is 10
+The value of a_global in main workspace / namespace now is 20
+
+In [32]: _a_global = 10
+    ...: 
+    ...: def a_function():
+    ...: 
+    ...:     def _a_function2():
+    ...:         global _a_global
+    ...:         _a_global = 20
+    ...: 
+    ...:     print("Before calling a_function2, value of _a_global is", _a_global)
+    ...: 
+    ...:     _a_function2()
+    ...: 
+    ...:     print("After calling a_function2, value of _a_global is", _a_global)
+    ...: 
+    ...: a_function()
+    ...: 
+    ...: print("The value of a_global in main workspace / namespace is", _a_global)
+Before calling a_function2, value of _a_global is 10
+After calling a_function2, value of _a_global is 20
+The value of a_global in main workspace / namespace is 20
+
+In [33]: def modify_list_1(some_list):
+    ...:     print('got', some_list)
+    ...:     some_list = [1, 2, 3, 4]
+    ...:     print('set to', some_list)
+    ...: 
+
+In [34]: my_list = [1, 2, 3]
+    ...: 
+    ...: print('before, my_list =', my_list)
+before, my_list = [1, 2, 3]
+
+In [35]: modify_list_1(my_list)
+got [1, 2, 3]
+set to [1, 2, 3, 4]
+
+In [36]: print('after, my_list =', my_list)
+after, my_list = [1, 2, 3]
+
+In [37]: def modify_list_2(some_list):
+    ...:     print('got', some_list)
+    ...:     some_list = [1, 2, 3, 4]
+    ...:     print('set to', some_list)
+    ...:     return some_list
+    ...: 
+
+In [38]: my_list = modify_list_2(my_list)
+got [1, 2, 3]
+set to [1, 2, 3, 4]
+
+In [39]: print('after, my_list =', my_list)
+after, my_list = [1, 2, 3, 4]
+
+In [40]: def modify_list_3(some_list):
+    ...:     print('got', some_list)
+    ...:     some_list.append(4) # an actual modification of the list
+    ...:     print('changed to', some_list)
+    ...: 
+    ...: my_list = [1, 2, 3]
+    ...: 
+    ...: print('before, my_list =', my_list)
+before, my_list = [1, 2, 3]
+
+In [41]: modify_list_3(my_list)
+got [1, 2, 3]
+changed to [1, 2, 3, 4]
+
+In [42]: print('after, my_list =', my_list)
+after, my_list = [1, 2, 3, 4]
+
+In [43]: 
+ *  History restored 
+
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ 
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ 
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ 
+
+
