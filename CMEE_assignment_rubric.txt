@@ -1,0 +1,138 @@
+﻿https://mhasoba.github.io/TheMulQuaBio/notebooks/Appendix-Assessment.html#the-weekly-feedback
+
+Masters students
+Both your practical computing work itself (including any writeups), and whether you are following good programming and workflow practices will be assessed, usually on a weekly basis. Note that practicals in the weeks not included in this book (e.g., GIS and Genomics) will also be included in the assessment (what “assessment” of these weeks’ practicals means is explained below). So keep the workflow in those weeks organized, even if the analyses or pipelines/workflows you were taught we not fully reusable or machine-reproducible.
+The basic rules you must follow, irrespective of a Week’s content are:
+    • All code/scripts go to a Code (or code) directory
+    • All data go to a Data (or data) directory
+    • All results go to a Results (or results) directory. The results directory should be empty when you submit your week’s work, as it will be populated automatically when the assessment script runs.
+    • If you have files that don’t fit in these categories, put them additional, meaningfully named directories. For example, you can create a writeup directory to hold your (LaTeX) written work, and include your compiled pdf of the written report there.
+    • No single file should be greater than 100 mb, either data or script/code. If a script needs a data file, but the example data file is >100 mb, reduce it to a minimum working dataset and upload that, keeping the main data file(s) under .gitignore (see the Git Chapter. Keep all your main data backed up, of course!.
+    • Most importantly, all Python, R, bash, and LaTeX scripts should run without errors, taking in data and spitting out the results as necessary.
+When necessary, more specific, module-specific details on weekly coursework and assessment will be given when the module starts.
+Weekly practicals wrap-up
+Do this as after you finish with an assignment, and at the end of every week:
+    • Review and make sure you can run all the commands, code fragments, and named scripts you have built till then and get the expected outputs.
+    • Review your code files and annotate/comment code lines as much and as often as necessary using #.
+    • Check that all code, data and results files organized as instructed above in you weekly directory.
+    • git add, commit and push your work after every major change to your weekly work, and make a final push by the given deadline (typically in the following week).
+The Weekly Feedback
+A Python script will check whether your weekly (version-controlled) directories are neat and organized in a logical workflow, and whether all the scripts run correctly with the expected inputs and outputs, starting with the R Chapter. For example, the script will check if your coursework code, data and results outputs in each week are organized in separate directories named code, data, results (or equivalent) respectively.
+The feedback script will then record a log file that summarizes all the issues found in your workflows, which will be pushed to your git repo, typically within 4 days after you submit your weekly practical. This log file will award “points” on a weekly basis to give you and the assessor a quantitative measure of how well you have done in that week. Here is the points scheme for this weekly feedback:
+Note
+An in-class script is one that is either given to you in class, or which you built from code fragments used in class (typically by re-typing them verbatim) to illustrate one or more programming concepts/tools. An assigned script is one you have written yourself, either from scratch, or by modifying one given to you, to address/answer a problem or task assigned to you (always appearing under a “Practicals” subsection of a chapter).
+    • You would get 100 points if,
+    • All the in-class scripts were in place (in the code directory in the respective week’s directory) and functional when run on the assessor’s (Linux) computer.
+    • All the assigned practicals / problems were complete and functional, and give the right answers.
+    • The scripts are all up to the the mark in terms of internal documentation and commenting.
+    • There is a neat readme file for the overall repository and in each of the weekly directories.
+    • For every missing script or assigned practical/problem, 10 pts deducted (including groupwork scripts; see below)
+    • For every assigned practical/problem, 5 pts deducted for wrong answer if applicable (that is, script runs without error, but gives wrong numerical/text/graphical output).
+    • For every missing readme file, 1 pt deducted.
+    • For every extra, non-script file in Code directory, 0.5 pt deducted.
+    • For every pre-existing file in the Results directory, 0.5 pt deducted.
+    • For every valid script file in Code directory lacking an appropriate extension file (*.sh,\ *.py, etc), 0.5 pt deducted.
+    • For every in-class script that gives a syntax error, 5 pts deducted, and for every script that gives an error because of wrong path (e.g., absolute) assignment, 2 pts deducted.
+    • For every Python script completely lacking a docstring, 2 pts deducted. For every function in a Python script lacking a docstring, 0.5 pt deducted.
+    • For every result of a code/script run not saved to a separate results directory, 1 pt deducted. For example, the separate directory may be Results for new results, or Data, if the scripts is for generating a new or modified dataset.
+Groupwork
+Execution
+    • Each student group will assign a “scribe” to the group who will create a new Groupwork repository where all assigned groupwork practicals will be tackled collaboratively.
+    • The group members will collaborate to develop the solution by creating branches of the script.
+        ◦ Every group member MUST create their own branch and work on each of the groupwork practicals.
+    • Once the group has reached a solution, all branches should be merged and the final script transferred to each student’s main coursework repository.
+    • Please read about git branching/merging, including the resources given at the end of the Git Chapter
+    • The groupwork practicals will will only be evaluated in the final assessment (next section). The specific deadline will be given in class.
+Assessment
+    • Every “Groupwork” question/script completed will be assessed using the same criteria as above, but in the final evaluation only.
+    • If there are inconsistencies between a groupwork script of a given group, 5 points will be deducted from each group member’s total.
+
+
+
+
+
+The final assessment of computing coursework
+
+A written summary assessment of your overall performance with your marks will be sent after the end of the computing weeks (end of term). For this, all the weeks scripts (including the Groupwork scripts) will be run / re-run.
+
+Using the points obtained by each student in each week based on the criteria goben in the (The Weekly Feedback section), the assessor will exercise her/his judgment to deduct further marks if the weekly directory structure is disorganized, the code inadequately commented or insufficiently documented, the solution is not optimal or correct, or the written components of practicals are not up to the mark.
+
+Please put (judicious) comments in all of your script files. You will be penalized if you don’t properly document and comment code, even if you weren’t explicitly asked to.
+
+The weekly log files are to help you spot general, as well as programming language-specific issues with your computing coursework on a regular basis. You may and should fix bugs and other problems that the feedback logs bring to your attention. The assessor will have a look at how much you addressed the issues in the final assessment (by re-running all the weeks’ scripts). The final assessment will necessarily be more subjective than the weekly assessments, because the goal is to provide an overall, summative picture of how you did and what you can improve on. You will get feedback if these issues needed to be addressed in the final written assessment. The final marks will be based upon the weekly points and a coursework marking criteria. The contribution of each week to the overall marks will be up- or down-weighed based upon the difficulty level.
+Plagiarism
+
+Students are encouraged to collaborate on these courses (e.g., CMEE). You may often exchange code snippets (solutions to sub-problems within the bigger problem, if you like) or blocks of code to test them. Also, two implementations of a coding solution / algorithm might often be very convergent and relatively similar. However, unless it is a groupwork practical (see above), extremely similar or identical scripts / code files will be reviewed carefully by markers. To this end, the assessment script will perform a diff on pairs of (non-groupwork) code files to detect “inordinate” degrees of similarity.
+
+
+
+https://mhasoba.github.io/TheMulQuaBio/notebooks/Appendix-Assessment.html#the-weekly-feedback
+
+硕士生
+您的实际计算工作本身（包括任何书面记录）以及您是否遵循良好的编程和工作流程实践都将被评估，通常每周一次。 请注意，本书中未包含的几周的实践（例如，GIS 和基因组学）也将包含在评估中（这几周的实践“评估”的含义将在下面解释）。 因此，请保持这几周的工作流程井井有条，即使您学到的分析或管道/工作流程不能完全重用或机器可重现。
+无论一周的内容如何，您必须遵循的基本规则是：
+     • 所有代码/脚本都进入代码（或代码）目录
+     • 所有数据都保存在Data（或数据）目录中
+     • 所有结果都会进入结果（或多个结果）目录。 当您提交一周的工作时，结果目录应该为空，因为它会在评估脚本运行时自动填充。
+     • 如果您有不属于这些类别的文件，请将它们放入其他有意义的命名目录中。 例如，您可以创建一个 writeup 目录来保存您的 (LaTeX) 书面作品，并在其中包含您编译的书面报告的 pdf 文件。
+     • 任何单个文件（无论是数据还是脚本/代码）都不应大于100 mb。 如果脚本需要数据文件，但示例数据文件>100 mb，请将其减少到最小工作数据集并上传，将主数据文件保留在 .gitignore 下（请参阅 Git 章节。保留所有主数据文件） 当然是备份数据！
+     • 最重要的是，所有Python、R、bash 和LaTeX 脚本都应该无错误地运行，接收数据并根据需要输出结果。
+必要时，将在模块开始时提供有关每周课程作业和评估的更具体、针对模块的详细信息。
+每周实践总结
+在完成作业后以及每周结束时执行此操作：
+     • 检查并确保您可以运行迄今为止构建的所有命令、代码片段和命名脚本并获得预期的输出。
+     • 检查您的代码文件，并根据需要尽可能多地使用# 来注释/注释代码行。
+     • 检查每周目录中的所有代码、数据和结果文件是否按照上述说明进行组织。
+     • 在每周工作发生每次重大变更后，git add、提交并推送您的工作，并在给定的截止日期前（通常在下周）进行最后的推送。
+每周反馈
+Python 脚本将检查您的每周（版本控制）目录是否整齐并按逻辑工作流程组织，以及所有脚本是否以预期的输入和输出正确运行，从 R 章节开始。 例如，该脚本将检查您每周的课程作业代码、数据和结果输出是否组织在分别名为代码、数据、结果（或同等内容）的单独目录中。
+然后，反馈脚本将记录一个日志文件，其中总结了工作流程中发现的所有问题，该日志文件通常会在您提交每周实践后的 4 天内推送到您的 git 存储库。 该日志文件将每周奖励“分数”，以便您和评估员定量衡量您在该周的表现。 以下是每周反馈的积分方案：
+笔记
+课堂脚本是在课堂上提供给您的脚本，或者是您根据课堂上使用的代码片段构建的脚本（通常通过逐字重新键入它们）来说明一个或多个编程概念/工具。 分配的脚本是您自己编写的脚本，可以从头开始编写，也可以通过修改给您的脚本来解决/回答分配给您的问题或任务（始终出现在章节的“实践”小节下）。
+     • 如果满足以下条件，您将获得 100 分：
+     • 所有课堂脚本均已就位（位于相应周目录的代码目录中）并且在评估者 (Linux) 计算机上运行时可正常运行。
+     • 所有分配的实践/问题均完整且实用，并给出正确答案。
+     • 这些脚本在内部文档和注释方面均符合标准。
+     • 整个存储库和每个每周目录都有一个简洁的自述文件。
+     • 对于每个缺失的脚本或分配的实际/问题，扣 10 分（包括小组作业脚本；见下文）
+     • 对于每个分配的实际/问题，如果适用，错误答案扣 5 分（即脚本运行没有错误，但给出错误的数字/文本/图形输出）。
+     • 对于每个缺失的自述文件，扣1 分。
+     • 对于代码目录中的每个额外的非脚本文件，扣除0.5 分。
+     • 对于结果目录中的每个预先存在的文件，扣除0.5 分。
+     • 对于代码目录中缺少适当扩展文件（*.sh、\ *.py 等）的每个有效脚本文件，扣除 0.5 分。
+     • 对于每个出现语法错误的课堂脚本，扣 5 分，并且由于错误的路径（例如绝对路径）分配而给出错误的每个脚本，扣 2 分。
+     • 对于每个完全缺少文档字符串的Python 脚本，扣2 分。 对于 Python 脚本中缺少文档字符串的每个函数，扣除 0.5 分。
+     • 对于未保存到单独结果目录的代码/脚本运行的每个结果，扣1 分。 例如，如果脚本用于生成新的或修改的数据集，则单独的目录可以是新结果的“结果”或“数据”。
+团队合作
+执行
+     • 每个学生小组将为该小组分配一名“抄写员”，该“抄写员”将创建一个新的小组作业存储库，其中所有分配的小组作业实践都将协作处理。
+     • 小组成员将通过创建脚本分支来协作开发解决方案。
+         ◦ 每个小组成员必须创建自己的分支并致力于每个小组实践。
+     • 一旦小组达成解决方案，应合并所有分支，并将最终脚本传输到每个学生的主课程作业存储库。
+     • 请阅读有关 git 分支/合并的内容，包括 Git 章节末尾给出的资源
+     • 小组作业实践将仅在最终评估中进行评估（下一节）。 具体截止时间将在课堂上给出。
+评估
+     • 每个完成的“小组作业”问题/脚本都将使用与上述相同的标准进行评估，但仅在最终评估中进行。
+     • 如果某个小组的小组作业脚本不一致，则每个小组成员的总分将被扣 5 分。
+
+
+
+
+
+计算机课程作业的最终评估
+
+您的整体表现和分数的书面总结评估将在计算周结束（学期结束）后发送。 为此，所有周脚本（包括小组工作脚本）都将运行/重新运行。
+
+根据（每周反馈部分）中的标准，使用每个学生每周获得的分数，如果每周目录结构杂乱，代码注释不充分或不充分，评估员将根据她/他的判断进一步扣除分数 记录下来，解决方案不是最佳的或不正确的，或者实践的书面部分不符合标准。
+
+请在所有脚本文件中添加（明智的）注释。 如果您没有正确记录和注释代码，即使没有明确要求，您也会受到惩罚。
+
+每周日志文件旨在帮助您定期发现计算课程作业中的一般问题以及特定于编程语言的问题。 您可以而且应该修复反馈日志引起您注意的错误和其他问题。 评估员将查看您在最终评估中解决问题的程度（通过重新运行所有几周的脚本）。 最终评估必然比每周评估更加主观，因为目标是提供一个总体的、总结性的图片，说明您的表现以及可以改进的地方。 如果这些问题需要在最终书面评估中解决，您将获得反馈。 最终分数将基于每周分数和课程作业评分标准。 每周对总分的贡献将根据难度级别进行上调或下调。
+抄袭
+
+鼓励学生在这些课程上进行合作（例如 CMEE）。 您可能经常交换代码片段（如果您愿意的话，可以交换更大问题中的子问题的解决方案）或代码块来测试它们。 此外，编码解决方案/算法的两种实现通常可能非常收敛并且相对相似。 然而，除非是小组合作实践（见上文），否则极其相似或相同的脚本/代码文件将由标记者仔细审查。 为此，评估脚本将对成对的（非团队工作）代码文件执行比较，以检测“过度”的相似度。
+
+
+
+
+
