@@ -36,7 +36,7 @@ OUTPUT_PATH_CSV=../Data/Output/
 
 # Idea: 
 # 1. substitude
-for each_csv in $PATH_CSV/*.csv;
+for each_csv in $PATH_CSV/*.csv
     $m=0;        # the iterator ??
     do
         # substitute
@@ -57,16 +57,23 @@ for each_csv in $PATH_CSV/*.csv;
         # IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         # sed -i "s/原字符串/新字符串/g" `grep 原字符串 -rl 所在目录`
 
-
         # save output to a file 
 
         # INPUT_PATH_CSV 
 
         # output to output path 
 
-        m=m+1  
+        $m=$m+1  
     done
 exit;
+
+# How to loop through all the files: 
+# https://www.cyberciti.biz/faq/bash-loop-over-file/
+for f in PATH_CSV/*.csv
+do
+    echo "Processing $f" # always double quote "$f" filename
+    # do something on $f
+done
 
 
 # My father says that I can also do not use an iterator...He says we can use a batch file operation...
