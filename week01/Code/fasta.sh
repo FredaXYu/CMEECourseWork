@@ -49,10 +49,19 @@ tail -n +2 ../Data/fasta/E.coli.fasta   # can work 10 Oct
 
 #############################################################################
 #4: matches of "ATGC" in E.coli
-# Count the sequence length of this genome
-wc ../Data/fasta/E.coli.fasta/E.coli.fasta  # can work 10 Oct
+# Step 1: Count the sequence length of this genome
+wc ../Data/fasta/E.coli.fasta  # can work 14 Oct
 
-# Should tail all the codes from the second line
+###############   output   ####################
+#
+#  78104   78104 4764248 ../Data/fasta/E.coli.fasta
+#  Usage: grep [OPTION]... PATTERNS [FILE]...
+#  Try 'grep --help' for more information.
+      0       0       0
+
+################################################
+
+# Step 2: Should tail all the codes from the second line
 
 
 #############################################################################

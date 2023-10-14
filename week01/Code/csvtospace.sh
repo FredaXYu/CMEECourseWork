@@ -30,14 +30,16 @@ echo -e "\nNow I want to handle the file path. \n"    # can work
 # else not execute, stop
 
 
-INPUT_PATH_CSV=../Data/Temperatures
-OUTPUT_PATH_CSV=../Data/Output/
+$INPUT_PATH_CSV=../Data/Temperatures     # cannot work
+$OUTPUT_PATH_CSV=../Data/Output/
 
+echo -e "\nNow I am here 01. \n"    # can work
 
 # Idea: 
 # 1. substitude
-for each_csv in $PATH_CSV/*.csv
-    $m=0;        # the iterator ??
+
+m=0;        # the iterator ??
+for each_csv in $PATH_CSV/*.csvs
     do
         # substitute
         # Solution01: use cat and channel, to truncate

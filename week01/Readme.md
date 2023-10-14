@@ -36,8 +36,11 @@ https://mhasoba.github.io/TheMulQuaBio/notebooks/03-Git.html#practicals
 https://mhasoba.github.io/TheMulQuaBio/notebooks/04-LaTeX.html#practicals-wrap-up 
 
 
+### Code Files: 
+(format cr. tashramsden)
 
-
+ [**boilerplate.sh**](Code/boilerplate.sh)
+  * This is the description. 
 
 
 
