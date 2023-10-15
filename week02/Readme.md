@@ -16,6 +16,7 @@
 ### Week Course Material Chatpers: 
 
 Scientific documents with LaTex, 
+
 Biological Computing in Python I
 
 ### Coursework URLs: 
@@ -25,10 +26,15 @@ Computing BootCamp
 
 Instructions
 Please submit by pushing to your git repository by due date:
+
 https://mhasoba.github.io/TheMulQuaBio/notebooks/05-Python_I.html#loops-and-list-comprehensions
+
 https://mhasoba.github.io/TheMulQuaBio/notebooks/05-Python_I.html#writing-a-program-with-control-flows
+
 https://mhasoba.github.io/TheMulQuaBio/notebooks/05-Python_I.html#align-dna-sequences
+
 https://mhasoba.github.io/TheMulQuaBio/notebooks/05-Python_I.html#missing-oaks-problem
+
 Further instructions: https://mhasoba.github.io/TheMulQuaBio/notebooks/05-Python_I.html#practicals-wrap-up
 
 Assessment criteria  https://mhasoba.github.io/TheMulQuaBio/notebooks/Appendix-Assessment.html, and specifically, https://mhasoba.github.io/TheMulQuaBio/notebooks/Appendix-Assessment.html#the-weekly-feedback
