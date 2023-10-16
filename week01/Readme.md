@@ -13,6 +13,7 @@
 ### Week Start and End Date: 02 Oct 2023 - 06 Oct 2023
 ### Created Date: 12 Oct 2023
 ### Teacher's Github: https://github.com/mhasoba/TheMulQuaBio/tree/master/content
+### Teacher's Github repository content page: https://github.com/mhasoba/TheMulQuaBio/tree/master/content
 ### Week Course Material Chatpers: 
 UNIX and Linux, 
 Shell scripting, 
