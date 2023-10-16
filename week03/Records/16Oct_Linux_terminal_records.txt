@@ -1,0 +1,578 @@
+yxy1028@yxy-hp-borrowed:~$ ^[[200~sudo apt install r-base r-base-dev~
+sudo: command not found
+yxy1028@yxy-hp-borrowed:~$ sudo apt install r-base r-base-dev
+[sudo] password for yxy1028: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
+  python-pkg-resources python-setuptools python2 python2-minimal python2.7
+  python2.7-minimal
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  bzip2-doc gfortran gfortran-11 icu-devtools libblas-dev libbz2-dev
+  libgfortran-11-dev libicu-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev
+  liblapack-dev liblzma-dev libncurses-dev libncurses5-dev libpcre16-3
+  libpcre2-dev libpcre2-posix3 libpcre3-dev libpcre32-3 libpcrecpp0v5
+  libpng-dev libpng-tools libreadline-dev pkg-config r-base-core r-base-html
+  r-cran-boot r-cran-class r-cran-cluster r-cran-codetools r-cran-foreign
+  r-cran-kernsmooth r-cran-lattice r-cran-mass r-cran-matrix r-cran-mgcv
+  r-cran-nlme r-cran-nnet r-cran-rpart r-cran-spatial r-cran-survival
+  r-doc-html r-recommended
+Suggested packages:
+  gfortran-multilib gfortran-doc gfortran-11-multilib gfortran-11-doc
+  libcoarrays-dev liblapack-doc icu-doc liblzma-doc ncurses-doc readline-doc
+  elpa-ess r-doc-info | r-doc-pdf r-mathlib
+The following NEW packages will be installed
+  bzip2-doc gfortran gfortran-11 icu-devtools libblas-dev libbz2-dev
+  libgfortran-11-dev libicu-dev libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev
+  liblapack-dev liblzma-dev libncurses-dev libncurses5-dev libpcre16-3
+  libpcre2-dev libpcre2-posix3 libpcre3-dev libpcre32-3 libpcrecpp0v5
+  libpng-dev libpng-tools libreadline-dev pkg-config r-base r-base-core
+  r-base-dev r-base-html r-cran-boot r-cran-class r-cran-cluster
+  r-cran-codetools r-cran-foreign r-cran-kernsmooth r-cran-lattice r-cran-mass
+  r-cran-matrix r-cran-mgcv r-cran-nlme r-cran-nnet r-cran-rpart
+  r-cran-spatial r-cran-survival r-doc-html r-recommended
+0 to upgrade, 46 to newly install, 0 to remove and 212 not to upgrade.
+Need to get 80.0 MB of archives.
+After this operation, 195 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 bzip2-doc all 1.0.8-5build1 [500 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libgfortran-11-dev amd64 11.4.0-1ubuntu1~22.04 [842 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 gfortran-11 amd64 11.4.0-1ubuntu1~22.04 [11.2 MB]
+Get:4 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 gfortran amd64 4:11.2.0-1ubuntu1 [1,182 B]
+Get:5 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 icu-devtools amd64 70.1-2 [197 kB]
+Get:6 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 libblas-dev amd64 3.10.0-2ubuntu1 [164 kB]
+Get:7 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 libbz2-dev amd64 1.0.8-5build1 [32.5 kB]
+Get:8 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 libicu-dev amd64 70.1-2 [11.6 MB]
+Get:9 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg-turbo8-dev amd64 2.1.2-0ubuntu1 [257 kB]
+Get:10 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg8-dev amd64 8c-2ubuntu10 [1,476 B]
+Get:11 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 libjpeg-dev amd64 8c-2ubuntu10 [1,472 B]
+Get:12 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 liblapack-dev amd64 3.10.0-2ubuntu1 [4,774 kB]
+Get:13 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libncurses-dev amd64 6.3-2ubuntu0.1 [381 kB]
+Get:14 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libncurses5-dev amd64 6.3-2ubuntu0.1 [790 B]
+Get:15 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpcre16-3 amd64 2:8.39-13ubuntu0.22.04.1 [164 kB]
+Get:16 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpcre2-posix3 amd64 10.39-3ubuntu0.1 [6,130 B]
+Get:17 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpcre2-dev amd64 10.39-3ubuntu0.1 [730 kB]
+Get:18 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpcre32-3 amd64 2:8.39-13ubuntu0.22.04.1 [155 kB]
+Get:19 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpcrecpp0v5 amd64 2:8.39-13ubuntu0.22.04.1 [16.5 kB]
+Get:20 http://gb.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpcre3-dev amd64 2:8.39-13ubuntu0.22.04.1 [579 kB]
+Get:21 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 libpng-dev amd64 1.6.37-3build5 [192 kB]
+Get:22 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 libpng-tools amd64 1.6.37-3build5 [28.7 kB]
+Get:23 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 libreadline-dev amd64 8.1.2-1 [166 kB]
+Get:24 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 pkg-config amd64 0.29.2-1ubuntu3 [48.2 kB]
+Get:25 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-base-core amd64 4.1.2-1ubuntu2 [26.0 MB]
+Get:26 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-boot all 1.3-28-2 [618 kB]
+Get:27 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-cluster amd64 2.1.2-2 [541 kB]
+Get:28 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-foreign amd64 0.8.82-1 [244 kB]
+Get:29 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-mass amd64 7.3-55-1 [1,116 kB]
+Get:30 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-kernsmooth amd64 2.23-20-1 [90.3 kB]
+Get:31 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-lattice amd64 0.20-45-1 [1,130 kB]
+Get:32 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-nlme amd64 3.1.155-1 [2,235 kB]
+Get:33 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-matrix amd64 1.4-0-1 [4,305 kB]
+Get:34 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-mgcv amd64 1.8-39-1 [2,994 kB]
+Get:35 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-survival amd64 3.2-13-1 [6,579 kB]
+Get:36 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-rpart amd64 4.1.16-1 [892 kB]
+Get:37 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-class amd64 7.3-20-1 [87.9 kB]
+Get:38 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-nnet amd64 7.3-17-1 [112 kB]
+Get:39 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-spatial amd64 7.3-15-1 [132 kB]
+Get:40 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-cran-codetools all 0.2-18-1 [90.8 kB]
+Get:41 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-recommended all 4.1.2-1ubuntu2 [2,624 B]
+Get:42 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-base all 4.1.2-1ubuntu2 [9,288 B]
+Get:43 http://gb.archive.ubuntu.com/ubuntu jammy/main amd64 liblzma-dev amd64 5.2.5-2ubuntu1 [159 kB]
+Get:44 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-base-dev all 4.1.2-1ubuntu2 [4,306 B]
+Get:45 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-doc-html all 4.1.2-1ubuntu2 [557 kB]
+Get:46 http://gb.archive.ubuntu.com/ubuntu jammy/universe amd64 r-base-html all 4.1.2-1ubuntu2 [57.2 kB]
+Fetched 80.0 MB in 14s (5,909 kB/s)                                            
+Extract templates from packages: 100%
+Selecting previously unselected package bzip2-doc.
+(Reading database ... 460146 files and directories currently installed.)
+Preparing to unpack .../00-bzip2-doc_1.0.8-5build1_all.deb ...
+Unpacking bzip2-doc (1.0.8-5build1) ...
+Selecting previously unselected package libgfortran-11-dev:amd64.
+Preparing to unpack .../01-libgfortran-11-dev_11.4.0-1ubuntu1~22.04_amd64.deb ..
+.
+Unpacking libgfortran-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package gfortran-11.
+Preparing to unpack .../02-gfortran-11_11.4.0-1ubuntu1~22.04_amd64.deb ...
+Unpacking gfortran-11 (11.4.0-1ubuntu1~22.04) ...
+Selecting previously unselected package gfortran.
+Preparing to unpack .../03-gfortran_4%3a11.2.0-1ubuntu1_amd64.deb ...
+Unpacking gfortran (4:11.2.0-1ubuntu1) ...
+Selecting previously unselected package icu-devtools.
+Preparing to unpack .../04-icu-devtools_70.1-2_amd64.deb ...
+Unpacking icu-devtools (70.1-2) ...
+Selecting previously unselected package libblas-dev:amd64.
+Preparing to unpack .../05-libblas-dev_3.10.0-2ubuntu1_amd64.deb ...
+Unpacking libblas-dev:amd64 (3.10.0-2ubuntu1) ...
+Selecting previously unselected package libbz2-dev:amd64.
+Preparing to unpack .../06-libbz2-dev_1.0.8-5build1_amd64.deb ...
+Unpacking libbz2-dev:amd64 (1.0.8-5build1) ...
+Selecting previously unselected package libicu-dev:amd64.
+Preparing to unpack .../07-libicu-dev_70.1-2_amd64.deb ...
+Unpacking libicu-dev:amd64 (70.1-2) ...
+Selecting previously unselected package libjpeg-turbo8-dev:amd64.
+Preparing to unpack .../08-libjpeg-turbo8-dev_2.1.2-0ubuntu1_amd64.deb ...
+Unpacking libjpeg-turbo8-dev:amd64 (2.1.2-0ubuntu1) ...
+Selecting previously unselected package libjpeg8-dev:amd64.
+Preparing to unpack .../09-libjpeg8-dev_8c-2ubuntu10_amd64.deb ...
+Unpacking libjpeg8-dev:amd64 (8c-2ubuntu10) ...
+Selecting previously unselected package libjpeg-dev:amd64.
+Preparing to unpack .../10-libjpeg-dev_8c-2ubuntu10_amd64.deb ...
+Unpacking libjpeg-dev:amd64 (8c-2ubuntu10) ...
+Selecting previously unselected package liblapack-dev:amd64.
+Preparing to unpack .../11-liblapack-dev_3.10.0-2ubuntu1_amd64.deb ...
+Unpacking liblapack-dev:amd64 (3.10.0-2ubuntu1) ...
+Selecting previously unselected package libncurses-dev:amd64.
+Preparing to unpack .../12-libncurses-dev_6.3-2ubuntu0.1_amd64.deb ...
+Unpacking libncurses-dev:amd64 (6.3-2ubuntu0.1) ...
+Selecting previously unselected package libncurses5-dev:amd64.
+Preparing to unpack .../13-libncurses5-dev_6.3-2ubuntu0.1_amd64.deb ...
+Unpacking libncurses5-dev:amd64 (6.3-2ubuntu0.1) ...
+Selecting previously unselected package libpcre16-3:amd64.
+Preparing to unpack .../14-libpcre16-3_2%3a8.39-13ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpcre16-3:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+Selecting previously unselected package libpcre2-posix3:amd64.
+Preparing to unpack .../15-libpcre2-posix3_10.39-3ubuntu0.1_amd64.deb ...
+Unpacking libpcre2-posix3:amd64 (10.39-3ubuntu0.1) ...
+Selecting previously unselected package libpcre2-dev:amd64.
+Preparing to unpack .../16-libpcre2-dev_10.39-3ubuntu0.1_amd64.deb ...
+Unpacking libpcre2-dev:amd64 (10.39-3ubuntu0.1) ...
+Selecting previously unselected package libpcre32-3:amd64.
+Preparing to unpack .../17-libpcre32-3_2%3a8.39-13ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpcre32-3:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+Selecting previously unselected package libpcrecpp0v5:amd64.
+Preparing to unpack .../18-libpcrecpp0v5_2%3a8.39-13ubuntu0.22.04.1_amd64.deb ..
+.
+Unpacking libpcrecpp0v5:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+Selecting previously unselected package libpcre3-dev:amd64.
+Preparing to unpack .../19-libpcre3-dev_2%3a8.39-13ubuntu0.22.04.1_amd64.deb ...
+Unpacking libpcre3-dev:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+Selecting previously unselected package libpng-dev:amd64.
+Preparing to unpack .../20-libpng-dev_1.6.37-3build5_amd64.deb ...
+Unpacking libpng-dev:amd64 (1.6.37-3build5) ...
+Selecting previously unselected package libpng-tools.
+Preparing to unpack .../21-libpng-tools_1.6.37-3build5_amd64.deb ...
+Unpacking libpng-tools (1.6.37-3build5) ...
+Selecting previously unselected package libreadline-dev:amd64.
+Preparing to unpack .../22-libreadline-dev_8.1.2-1_amd64.deb ...
+Unpacking libreadline-dev:amd64 (8.1.2-1) ...
+Selecting previously unselected package pkg-config.
+Preparing to unpack .../23-pkg-config_0.29.2-1ubuntu3_amd64.deb ...
+Unpacking pkg-config (0.29.2-1ubuntu3) ...
+Selecting previously unselected package r-base-core.
+Preparing to unpack .../24-r-base-core_4.1.2-1ubuntu2_amd64.deb ...
+Unpacking r-base-core (4.1.2-1ubuntu2) ...
+Selecting previously unselected package r-cran-boot.
+Preparing to unpack .../25-r-cran-boot_1.3-28-2_all.deb ...
+Unpacking r-cran-boot (1.3-28-2) ...
+Selecting previously unselected package r-cran-cluster.
+Preparing to unpack .../26-r-cran-cluster_2.1.2-2_amd64.deb ...
+Unpacking r-cran-cluster (2.1.2-2) ...
+Selecting previously unselected package r-cran-foreign.
+Preparing to unpack .../27-r-cran-foreign_0.8.82-1_amd64.deb ...
+Unpacking r-cran-foreign (0.8.82-1) ...
+Selecting previously unselected package r-cran-mass.
+Preparing to unpack .../28-r-cran-mass_7.3-55-1_amd64.deb ...
+Unpacking r-cran-mass (7.3-55-1) ...
+Selecting previously unselected package r-cran-kernsmooth.
+Preparing to unpack .../29-r-cran-kernsmooth_2.23-20-1_amd64.deb ...
+Unpacking r-cran-kernsmooth (2.23-20-1) ...
+Selecting previously unselected package r-cran-lattice.
+Preparing to unpack .../30-r-cran-lattice_0.20-45-1_amd64.deb ...
+Unpacking r-cran-lattice (0.20-45-1) ...
+Selecting previously unselected package r-cran-nlme.
+Preparing to unpack .../31-r-cran-nlme_3.1.155-1_amd64.deb ...
+Unpacking r-cran-nlme (3.1.155-1) ...
+Selecting previously unselected package r-cran-matrix.
+Preparing to unpack .../32-r-cran-matrix_1.4-0-1_amd64.deb ...
+Unpacking r-cran-matrix (1.4-0-1) ...
+Selecting previously unselected package r-cran-mgcv.
+Preparing to unpack .../33-r-cran-mgcv_1.8-39-1_amd64.deb ...
+Unpacking r-cran-mgcv (1.8-39-1) ...
+Selecting previously unselected package r-cran-survival.
+Preparing to unpack .../34-r-cran-survival_3.2-13-1_amd64.deb ...
+Unpacking r-cran-survival (3.2-13-1) ...
+Selecting previously unselected package r-cran-rpart.
+Preparing to unpack .../35-r-cran-rpart_4.1.16-1_amd64.deb ...
+Unpacking r-cran-rpart (4.1.16-1) ...
+Selecting previously unselected package r-cran-class.
+Preparing to unpack .../36-r-cran-class_7.3-20-1_amd64.deb ...
+Unpacking r-cran-class (7.3-20-1) ...
+Selecting previously unselected package r-cran-nnet.
+Preparing to unpack .../37-r-cran-nnet_7.3-17-1_amd64.deb ...
+Unpacking r-cran-nnet (7.3-17-1) ...
+Selecting previously unselected package r-cran-spatial.
+Preparing to unpack .../38-r-cran-spatial_7.3-15-1_amd64.deb ...
+Unpacking r-cran-spatial (7.3-15-1) ...
+Selecting previously unselected package r-cran-codetools.
+Preparing to unpack .../39-r-cran-codetools_0.2-18-1_all.deb ...
+Unpacking r-cran-codetools (0.2-18-1) ...
+Selecting previously unselected package r-recommended.
+Preparing to unpack .../40-r-recommended_4.1.2-1ubuntu2_all.deb ...
+Unpacking r-recommended (4.1.2-1ubuntu2) ...
+Selecting previously unselected package r-base.
+Preparing to unpack .../41-r-base_4.1.2-1ubuntu2_all.deb ...
+Unpacking r-base (4.1.2-1ubuntu2) ...
+Selecting previously unselected package liblzma-dev:amd64.
+Preparing to unpack .../42-liblzma-dev_5.2.5-2ubuntu1_amd64.deb ...
+Unpacking liblzma-dev:amd64 (5.2.5-2ubuntu1) ...
+Selecting previously unselected package r-base-dev.
+Preparing to unpack .../43-r-base-dev_4.1.2-1ubuntu2_all.deb ...
+Unpacking r-base-dev (4.1.2-1ubuntu2) ...
+Selecting previously unselected package r-doc-html.
+Preparing to unpack .../44-r-doc-html_4.1.2-1ubuntu2_all.deb ...
+Unpacking r-doc-html (4.1.2-1ubuntu2) ...
+Selecting previously unselected package r-base-html.
+Preparing to unpack .../45-r-base-html_4.1.2-1ubuntu2_all.deb ...
+Unpacking r-base-html (4.1.2-1ubuntu2) ...
+Setting up libpcrecpp0v5:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+Setting up bzip2-doc (1.0.8-5build1) ...
+Setting up libjpeg-turbo8-dev:amd64 (2.1.2-0ubuntu1) ...
+Setting up libncurses-dev:amd64 (6.3-2ubuntu0.1) ...
+Setting up r-doc-html (4.1.2-1ubuntu2) ...
+Setting up libpcre16-3:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+Setting up libpng-tools (1.6.37-3build5) ...
+Setting up libgfortran-11-dev:amd64 (11.4.0-1ubuntu1~22.04) ...
+Setting up libpng-dev:amd64 (1.6.37-3build5) ...
+Setting up libreadline-dev:amd64 (8.1.2-1) ...
+Setting up r-base-core (4.1.2-1ubuntu2) ...
+
+Creating config file /etc/R/Renviron with new version
+Setting up liblapack-dev:amd64 (3.10.0-2ubuntu1) ...
+Setting up libpcre32-3:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+Setting up icu-devtools (70.1-2) ...
+Setting up pkg-config (0.29.2-1ubuntu3) ...
+Setting up r-cran-lattice (0.20-45-1) ...
+Setting up r-cran-nlme (3.1.155-1) ...
+Setting up gfortran-11 (11.4.0-1ubuntu1~22.04) ...
+Setting up liblzma-dev:amd64 (5.2.5-2ubuntu1) ...
+Setting up libpcre2-posix3:amd64 (10.39-3ubuntu0.1) ...
+Setting up r-cran-cluster (2.1.2-2) ...
+Setting up libncurses5-dev:amd64 (6.3-2ubuntu0.1) ...
+Setting up r-cran-nnet (7.3-17-1) ...
+Setting up libjpeg8-dev:amd64 (8c-2ubuntu10) ...
+Setting up libicu-dev:amd64 (70.1-2) ...
+Setting up libblas-dev:amd64 (3.10.0-2ubuntu1) ...
+Setting up libbz2-dev:amd64 (1.0.8-5build1) ...
+Setting up r-cran-codetools (0.2-18-1) ...
+Setting up r-cran-boot (1.3-28-2) ...
+Setting up libpcre2-dev:amd64 (10.39-3ubuntu0.1) ...
+Setting up libpcre3-dev:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+Setting up r-cran-spatial (7.3-15-1) ...
+Setting up libjpeg-dev:amd64 (8c-2ubuntu10) ...
+Setting up r-cran-mass (7.3-55-1) ...
+Setting up r-cran-foreign (0.8.82-1) ...
+Setting up gfortran (4:11.2.0-1ubuntu1) ...
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f95 (f95) in au
+to mode
+update-alternatives: using /usr/bin/gfortran to provide /usr/bin/f77 (f77) in au
+to mode
+Setting up r-base-html (4.1.2-1ubuntu2) ...
+Setting up r-cran-matrix (1.4-0-1) ...
+Setting up r-cran-kernsmooth (2.23-20-1) ...
+Setting up r-cran-mgcv (1.8-39-1) ...
+Setting up r-base-dev (4.1.2-1ubuntu2) ...
+Setting up r-cran-class (7.3-20-1) ...
+Setting up r-cran-survival (3.2-13-1) ...
+Setting up r-cran-rpart (4.1.16-1) ...
+Setting up r-recommended (4.1.2-1ubuntu2) ...
+Setting up r-base (4.1.2-1ubuntu2) ...
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.4) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for tex-common (6.17) ...
+Running mktexlsr. This may take some time... done.
+Running mtxrun --generate. This may take some time... done.
+Processing triggers for install-info (6.8-4build1) ...
+yxy1028@yxy-hp-borrowed:~$ r
+Command 'r' not found, but can be installed with:
+sudo apt install r-cran-littler
+yxy1028@yxy-hp-borrowed:~$ R
+
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> c=5
+> c
+[1] 5
+> ?Command
+No documentation for ‘Command’ in specified packages and libraries:
+you could try ‘??Command’
+> ?q
+> a <- 4
+> a
+[1] 4
+> 4 -> a#
+> a
+[1] 4
+> 7 -> a
+> a
+[1] 7
+> a * a 
+[1] 49
+> b <- 10
+> b
+[1] 10
+> a + b
+[1] 17
+> a_squared <- a * a
+> sqrt(a_squared)
+[1] 7
+> v <- c(0, 1, 2, 3, 4)
+> v
+[1] 0 1 2 3 4
+> is.vector(v)
+[1] TRUE
+> mean(v)
+[1] 2
+> var(v)
+[1] 2.5
+> 
+> median(v)
+[1] 2
+> sam(v)
+Error in sam(v) : could not find function "sam"
+> sum(v)
+[1] 10
+> prod(v + 1)
+[1] 120
+> ?prod
+> prod(1:7)
+[1] 5040
+> prod(c(1,2,4,NA,5),na.rm=TRUE)
+[1] 40
+> sum(v)
+[1] 10
+> prod(v + 1)
+[1] 120
+> length(v)
+[1] 5
+> wing.width.cm <- 1.2 #Using dot notation
+> wing.length.cm <- c(4.7, 5.2, 4.8)
+> wing.width.cm <- 1.2
+> wing.
+wing.length.cm  wing.width.cm   
+> wing.width.cm <- 1.2 #Using dot notation
+> wing.length.cm <- c(4.7, 5.2, 4.8)
+> wing.
+wing.length.cm  wing.width.cm   
+> wing.
+Error: object 'wing.' not found
+> a <- 3
+> b <- 6
+> b %/%
++ a
+[1] 2
+> ! a
+[1] FALSE
+> a <- 0
+> !a
+[1] TRUE
+> 
+> asdfy
+Error: object 'asdfy' not found
+> asdf 
+Error: object 'asdf' not found
+> b + 
++ 
+> li = list(c(1, 2, 3))
+> class(li)
+[1] "list"
+> class(c(1, 2, 3))
+[1] "numeric"
+> 
+> v <- TRUE
+> v
+[1] TRUE
+> class(v)
+[1] "logical"
+> v <- 2L
+> a <- c("0", 1, 2)
+> class(a)
+[1] "character"
+> a
+[1] "0" "1" "2"
+> b <- NA
+class(b)
+[1] "logical"
+> 1E4
+[1] 10000
+> 1e4
+[1] 10000
+> 5e-2
+[1] 0.05
+> 1E4^2
+[1] 1e+08
+> 1e8
+[1] 1e+08
+> 1e4
+[1] 10000
+> 1e8
+[1] 1e+08
+> 1e5
+[1] 1e+05
+> 1e4^2
+[1] 1e+08
+> 1 / 3 / 1e8
+[1] 3.333333e-09
+> v2 <- character(3) # an empty vector 'character' with 3 elements
+v2
+[1] "" "" ""
+> v2[3] <- 5
+> v2
+[1] ""  ""  "5"
+> v2 <- "sdiui"
+> v2
+[1] "sdiui"
+> v2 <- character(3) # an empty vector 'character' with 3 elements
+> v2
+[1] "" "" ""
+> v2[2] <- eri
+Error: object 'eri' not found
+> v2[2] <- "sfw"
+> v2
+[1] ""    "sfw" ""   
+> v3 <- numeric(3) # an empty numeric 'character' with 3 elements
+v3
+[1] 0 0 0
+> mat1 <- matrix(1:25, 5, 5)
+mat1
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    6   11   16   21
+[2,]    2    7   12   17   22
+[3,]    3    8   13   18   23
+[4,]    4    9   14   19   24
+[5,]    5   10   15   20   25
+> mat2 <- matrix(1:20, 5, 4)
+> mat2
+     [,1] [,2] [,3] [,4]
+[1,]    1    6   11   16
+[2,]    2    7   12   17
+[3,]    3    8   13   18
+[4,]    4    9   14   19
+[5,]    5   10   15   20
+> print(mat1)
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    6   11   16   21
+[2,]    2    7   12   17   22
+[3,]    3    8   13   18   23
+[4,]    4    9   14   19   24
+[5,]    5   10   15   20   25
+> dim(mat1) #get the size of the matrix
+[1] 5 5
+> arr1 <- array(1:50, c(5, 5, 2))
+arr1[,,1]
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    6   11   16   21
+[2,]    2    7   12   17   22
+[3,]    3    8   13   18   23
+[4,]    4    9   14   19   24
+[5,]    5   10   15   20   25
+> arr1 <- array(1:50, c(5, 5, 2))
+arr1[,,1]
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    6   11   16   21
+[2,]    2    7   12   17   22
+[3,]    3    8   13   18   23
+[4,]    4    9   14   19   24
+[5,]    5   10   15   20   25
+> 
+> arr1[,,2]
+     [,1] [,2] [,3] [,4] [,5]
+[1,]   26   31   36   41   46
+[2,]   27   32   37   42   47
+[3,]   28   33   38   43   48
+[4,]   29   34   39   44   49
+[5,]   30   35   40   45   50
+> mat1[1,1] <- "one"
+mat1
+     [,1]  [,2] [,3] [,4] [,5]
+[1,] "one" "6"  "11" "16" "21"
+[2,] "2"   "7"  "12" "17" "22"
+[3,] "3"   "8"  "13" "18" "23"
+[4,] "4"   "9"  "14" "19" "24"
+[5,] "5"   "10" "15" "20" "25"
+> MyList <- list(1L, "p", FALSE, .001) # an integer, a character, a boolean, and a numeric walk into a bar...
+MyList
+[[1]]
+[1] 1
+
+[[2]]
+[1] "p"
+
+[[3]]
+[1] FALSE
+
+[[4]]
+[1] 0.001
+
+> typeof(a)
+[1] "character"
+> class(a)
+[1] "character"
+> class(mat1)
+[1] "matrix" "array" 
+> typeof(mat1`)
++ typeof(mat1`)
+Error: unexpected symbol in:
+"typeof(mat1`)
+typeof(mat1`"
+> typeof(mat1)
+[1] "character"
+> class(mat1)
+[1] "matrix" "array" 
+> typeof(mat1)
+[1] "character"
+> paste(mat1[1], mat1[2])
+[1] "one 2"
+> paste(mat1[1], mat1[2]) -> y
+> toupper(y)
+[1] "ONE 2"
+> y
+[1] "one 2"
+> toupper(y)
+[1] "ONE 2"
+> y
+[1] "one 2"
+> toupper(y) -> u
+> u
+[1] "ONE 2"
+> substring(u)
+Error in substring(u) : argument "first" is missing, with no default
+> ?substring
+> substr("abcdef", 2, 4)
+[1] "bcd"
+> substring("abcdef", 1:6, 1:6)
+[1] "a" "b" "c" "d" "e" "f"
+> 
+> 
+> 
+> 
+> 1:10
+ [1]  1  2  3  4  5  6  7  8  9 10
+> for(species in c('Heliodoxa rubinoides', 
+                 'Boissonneaua jardini', 
+                 'Sula nebouxii')) {
+      print(paste('The species is', species))
+}
+
