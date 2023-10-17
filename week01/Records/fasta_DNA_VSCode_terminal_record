@@ -1,0 +1,297 @@
+yxy1028@yxy-hp-borrowed:~$ 
+yxy1028@yxy-hp-borrowed:~$ 
+yxy1028@yxy-hp-borrowed:~$ ls
+CountLines.sh  Desktop    Downloads    GitHubDesktop-linux-3.1.1-linux1.deb  Pictures  q.log      snap       temporary.tmp  text.txt      Videos
+cv_debug.log   Documents  example.txt  Music                                 Public    README.md  Templates  texput.log     text.txt.pub
+yxy1028@yxy-hp-borrowed:~$ cd Documents
+yxy1028@yxy-hp-borrowed:~/Documents$ ls
+ CMEECourseWork   GitHub   IC_CMEE_course   orginal_GitHub  'teacher_folders_TheMulQuaBio-master(1)'   trial.odt
+yxy1028@yxy-hp-borrowed:~/Documents$ cd GitHub
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub$ ls
+CMEECourseWork
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub$ cd CMEECourseWork
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork$ ls
+CMEE_assignment_rubric.txt  README.md  week01  week02  week03  week04  week05
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork$ cd week03
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week03$ cd ../
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork$ ls
+README.md  week01  week02  week03  week04  week05
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork$ cd week01
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01$ ls
+Code  Data  Notes  Readme.md  Records  Sandbox
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01$ cd Code
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ ls
+align_seqs.py                boilerplate.sh   ConcatenateTwoFiles.sh  csvtospace.sh  file.py           for_loop.sh  myscript.sh         tabtocsv.sh    variables.sh
+assignment-CompileLaTex.txt  CompileLaTeX.sh  CountLines.sh           fasta.sh       FirstExample.tex  m.csv        pythonalign_seq.py  UnixPrac1.txt
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 14
+    input_file = ../Data/pythonalign_seq.py
+                 ^
+SyntaxError: invalid syntax
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 16
+    input_file = ../Data/pythonalign_seq.py
+                 ^
+SyntaxError: invalid syntax
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 41
+    '''  me
+    ^
+IndentationError: expected an indented block after function definition on line 40
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 18
+    input_file = ../Data/pythonalign_seq.py
+                 ^
+SyntaxError: invalid syntax
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 18
+    input_file = ../Data/pythonalign_seq.csv
+                 ^
+SyntaxError: invalid syntax
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 59
+    '''  me
+    ^
+IndentationError: expected an indented block after function definition on line 58
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+总第1行, 文件../Data/pythonalign_seq.txt中第1行：
+ATCGCCGGATTACGGG
+总第2行, 文件../Data/pythonalign_seq.txt中第2行：
+CAATTCGGAT
+-----*****
+CAATTCGGAT
+ATCGCCGGATTACGGG
+5
+ 
+.------*--*
+.CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+..*---------
+..CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+...--------*-
+...CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+....*---------
+....CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+.....*---*-----
+.....CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+......--***--*--
+......CAATTCGGAT
+ATCGCCGGATTACGGG
+4
+ 
+.......-*-*-***-
+.......CAATTCGGAT
+ATCGCCGGATTACGGG
+5
+ 
+........------**
+........CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+.........--*---*
+.........CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+..........-*----
+..........CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+...........-----
+...........CAATTCGGAT
+ATCGCCGGATTACGGG
+0
+ 
+............*---
+............CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+.............---
+.............CAATTCGGAT
+ATCGCCGGATTACGGG
+0
+ 
+..............--
+..............CAATTCGGAT
+ATCGCCGGATTACGGG
+0
+ 
+...............-
+...............CAATTCGGAT
+ATCGCCGGATTACGGG
+0
+ 
+CAATTCGGAT
+ATCGCCGGATTACGGG
+Best score: 5
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+Total the 1 th line, File ../Data/pythonalign_seq.txt the 1 th line
+ATCGCCGGATTACGGG
+Total the 2 th line, File ../Data/pythonalign_seq.txt the 2 th line
+CAATTCGGAT
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 43, in <module>
+    l1 = len(seq1)
+NameError: name 'seq1' is not defined
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+Total the 1 th line, File ../Data/pythonalign_seq.txt the 1 th line
+ATCGCCGGATTACGGG
+Total the 2 th line, File ../Data/pythonalign_seq.txt the 2 th line
+CAATTCGGAT
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 43, in <module>
+    l1 = len(seq1)
+NameError: name 'seq1' is not defined
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ ^C
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 44, in <module>
+    demo_fileinput()
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 30, in demo_fileinput
+    for i in len(lines): 
+TypeError: object of type 'FileInput' has no len()
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 46, in <module>
+    demo_fileinput()
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 29, in demo_fileinput
+    print("typeof(lines): ", typeof(lines), "len(lines)): ", len(lines))
+NameError: name 'typeof' is not defined. Did you mean: 'type'?
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 46, in <module>
+    demo_fileinput()
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 29, in demo_fileinput
+    print("type(lines): ", type(lines), "len(lines)): ", len(lines))
+TypeError: object of type 'FileInput' has no len()
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ ^C
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 48, in <module>
+    demo_fileinput()
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 31, in demo_fileinput
+    print("type(lines): ", type(lines), "len(lines): ", len(lines))
+TypeError: object of type 'FileInput' has no len()
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+new_lines:  <fileinput.FileInput object at 0x7f0525107fd0>
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 48, in <module>
+    demo_fileinput()
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week01/Code/pythonalign_seq.py", line 31, in demo_fileinput
+    print("type(lines): ", type(lines), "len(lines): ", len(lines))
+TypeError: object of type 'FileInput' has no len()
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week01/Code$ python3 pythonalign_seq.py
+After l1, l2
+After comparison of lengths
+ 
+-----*****
+CAATTCGGAT
+ATCGCCGGATTACGGG
+5
+ 
+ 
+.------*--*
+.CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+ 
+..*---------
+..CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+ 
+...--------*-
+...CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+ 
+....*---------
+....CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+ 
+.....*---*-----
+.....CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+ 
+......--***--*--
+......CAATTCGGAT
+ATCGCCGGATTACGGG
+4
+ 
+ 
+.......-*-*-***-
+.......CAATTCGGAT
+ATCGCCGGATTACGGG
+5
+ 
+ 
+........------**
+........CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+ 
+.........--*---*
+.........CAATTCGGAT
+ATCGCCGGATTACGGG
+2
+ 
+ 
+..........-*----
+..........CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+ 
+...........-----
+...........CAATTCGGAT
+ATCGCCGGATTACGGG
+0
+ 
+ 
+............*---
+............CAATTCGGAT
+ATCGCCGGATTACGGG
+1
+ 
+ 
+.............---
+.............CAATTCGGAT
+ATCGCCGGATTACGGG
+0
+ 
+ 
+..............--
+..............CAATTCGGAT
+ATCGCCGGATTACGGG
+0
+ 
+ 
+...............-
+...............CAATTCGGAT
+ATCGCCGGATTACGGG
+0
