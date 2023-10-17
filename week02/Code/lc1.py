@@ -6,10 +6,10 @@ birds = ( ('Passerculus sandwichensis','Savannah sparrow',18.7),
          )
 
 
-print(type(birds))   # tuple
-print(len(birds))
-print(type(birds[0]))   # tuple
-print(len(birds[0]))
+print("type(birds)", type(birds))   # tuple
+print("len(birds)", len(birds))
+print("type(birds[0])", type(birds[0]))   # tuple
+print("len(birds[0])", len(birds[0]))
 
 # print(birds[0][0])    # test, can work
 
@@ -19,9 +19,14 @@ print(len(birds[0]))
 
 # ??????????????????????????????????   
 
-latin = [x for x in birds[x][0]]
+# This is my task!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+latin = [x for x in birds[[x]][0]]
+common = [x for x in birds[[x]][0]]
+mean_mass = [x for x in birds[[x]][0]]
 
-print(latin)
+print("latin: ", latin)
+print("common: ", common)
+print("mean_mass: ", mean_mass)
 
 
 # (2) Now do the same using conventional loops (you can choose to do this 
