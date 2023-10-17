@@ -1,4 +1,4 @@
-.# Two example sequences to match
+# Two example sequences to match
 seq2 = "ATCGCCGGATTACGGG"
 seq1 = "CAATTCGGAT"
 
@@ -23,17 +23,17 @@ else:
 
 
 def calculate_score(s1, s2, l1, l2, startpoint):
-'''  me
-Parameters: 
-	s1:
-	s2:
-	l1: 
-	l2:
-	startpoint: 
-Output: 
-	score: 
+    '''  me
+    Parameters: 
+        s1:
+        s2:
+        l1: 
+        l2:
+        startpoint: 
+    Output: 
+        score: 
 
-'''
+    '''
 
     # initialisation: 
     matched = "" # to hold string displaying alignements
