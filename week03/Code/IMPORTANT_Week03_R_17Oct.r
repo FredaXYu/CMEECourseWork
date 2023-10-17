@@ -47,18 +47,35 @@ pop3<-list(lat=32,long=-10,
 pops<-list(sp1=pop1,sp2=pop2,sp3=pop3)
 
 print("-----------------------------------------------------------")
-print(sp3)
+# print(sp3)       # Error in print(sp3) : object 'sp3' not found
+
+#####################
+
+# Resource: https://stackoverflow.com/questions/2622777/exception-handling-in-r
+# tryCatch(print("passes"), error = function(e) print(vari), finally=print("finished")) 
+
+#####################
 
 print(pops)
 
-
 print(pops$sp1["pop"]) 
 
+# print("pops[[2]]$lat: ", pops[[2]]$lat)   # bug
 
+Col1 <- 1:10
+print("Col1: ", Col1)     # Question ???????????????  printout: [1] "Col1: "
 
+Col2 <- LETTERS[1:10]
+print(Col2)
 
+Col3 <- runif(10) # 10 random numbers from a uniform distribution
+print(Col3)
 
+MyDF <- data.frame(Col1, Col2, Col3)
+# print("MyDF: ", MyDF)    # 
 
+print(MyDF)
 
+# a R dataframe is in fact a list of equal-length vectors (a “rectangular” list).
 
 
