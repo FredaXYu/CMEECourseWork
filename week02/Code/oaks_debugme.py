@@ -38,6 +38,18 @@ Method01:
 
 Method02: 
 
+缺少橡树问题
+
+     打开并运行代码 Oaks_debugme.py — 有一个错误，因为没有找到 Oaks！ （TestOaksData.csv 在哪里？ - 在 TheMulQuaBio 存储库的数据目录中！）
+
+     修复错误（例如，您可以使用 import ipdb; ipdb.set_trace() 插入调试断点）
+
+     现在，编写文档测试以确保，无论有没有错误，您的 is_an_oak 函数都按预期工作（提示：>>> is_an_oak('Fagus sylvatica') 应该返回 False）
+
+如果您编写了好的文档测试，您将发现另一个仅通过调试可能不会遇到的错误（提示：如果您尝试使用“Quercuss”而不是“Quercus”进行文档测试，会发生什么？这应该通过还是失败？）。
+
+     适当修改您的文档测试，并修改您的脚本，以便它可以处理存在拼写错误（例如“Quercuss”）或存在严格意义上不是“Quercus”的属名的情况。
+
 '''
 
 
@@ -46,16 +58,28 @@ import sys
 
 # my codes: 
 import doctest
+import re
 
-doctest.testfile("../Data/example.txt")   # can pass 15 Oct 
+
+input_file_path = doctest.testfile("../Data/example.txt")   # can pass 15 Oct 
+output_file_path = doctest.testfile("../Data/output.txt") 
+
+def file_open(this_file):  
+    file_open = open(file_path, 'r') 
+    file_output = open('../Data/output.txt','w')
 
 #Define function
 def is_an_oak(name):
     '''
     Goal of this function guessed by me: 
         Determine whether the name input starts with 'quercs', ignoring uppercase/lowercase. 
+
+    Task: 
+        to make sure that this function can work
     '''
     """ Returns True if name is starts with 'quercus' """
+
+    name
 
     return name.lower().startswith('quercs')
 
