@@ -82,9 +82,11 @@ def is_an_oak(name):
     """ Returns True if name is starts with 'quercus' """
 
     # Firstly, convert name into a string
-    name_string = name.
+    name_string = name.tostring()
 
     return name.lower().startswith('quercs')
+
+print(is_an_oak('Fagus sylvatica'))
 
 
 def main(argv): 

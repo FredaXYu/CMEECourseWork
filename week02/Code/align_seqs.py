@@ -1,3 +1,14 @@
+
+###############
+# My Interpretation of Align DNA: Align DNA is 拿一个大的作为参照物，拿个小的在它上面，从第一个开始，以大的那个挨个为 start point，挪到最后
+# 给每个比对一个分，要最大的那个分（可能有平局），（我觉得我能匹配DNA片段？）
+# 
+# The translation tells me that 比对两个DNA，让它们尽可能相似
+# 
+# My idea: 最优，是距离。尽可能相似，是距离。 distance, to minimise the distance
+
+
+
 # Two example sequences to match
 seq2 = "ATCGCCGGATTACGGG"
 seq1 = "CAATTCGGAT"
@@ -20,6 +31,8 @@ else:
 
 # A function that computes a score by returning the number of matches starting
 # from arbitrary startpoint (chosen by user)
+
+# give the highest score 有几个 matches
 
 
 def calculate_score(s1, s2, l1, l2, startpoint):
