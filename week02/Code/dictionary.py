@@ -70,7 +70,7 @@ def key_value_sepa_to_two(list_key, list_value):
 
 # map to not a set, but a list
 def map_order_to_list(dic):    # ok
-        thing_return = []
+        thing_return_two_key_value = []
         dic_keys = []
         output_list_key = []
         output_list_value = []
@@ -91,7 +91,6 @@ def map_order_to_list(dic):    # ok
 
         taxa_in_list = list(taxa_dic.values())
         output_list_value = taxa_in_list
-        two_key_value = []   # initialisation
 
         print(taxa_dic.values())
         print("taxa_in_list", taxa_in_list)
@@ -109,17 +108,25 @@ def map_order_to_list(dic):    # ok
 
         dic_keys = dic.keys()
         print("dic_keys: ", dic_keys)   # can pass 20 Oct 14:59
+
+        output_list_key = list(dic_keys)
+
         print("output_list_key", output_list_key)    # can pass 20 Oct 14:59
         print("output_list_value", output_list_value)     # can pass 20 Oct 14:59
-        thing_return.append(output_list_key)
-        thing_return.append(output_list_value)
+
+        print("output_list_key", output_list_key)  # this works, it's a list 
+
+        output_list_value
+
+        # thing_return.append(output_list_key)
+        # thing_return.append(output_list_value)
 
         print("here")
 
 
-        key_value_sepa_to_two
+        return key_value_sepa_to_two
 
-        
+
 
         return thing_return
 
