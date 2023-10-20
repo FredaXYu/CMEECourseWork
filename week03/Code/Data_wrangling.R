@@ -3,6 +3,8 @@
 
 # 20 Oct 2023 data wrangling R
 
+# which R /usr/bin/R
+
 
 #################
 
