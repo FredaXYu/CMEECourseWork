@@ -1,0 +1,63 @@
+PS C:\Users\yxy> ls
+
+
+    目录: C:\Users\yxy
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2023/2/1     16:18                .idlerc
+d-----          2023/2/1     14:33                .ipython
+d-----          2023/2/1     14:58                .jupyter
+d-----          2023/2/1     17:17                .matplotlib
+d-----          2023/7/5     11:18                .vscode
+d-----         2023/8/16      5:49                .vscode-R
+
+PS C:\Users\yxy>
+ *  还原的历史记录 
+
+PS C:\Users\yxy> 
+ *  还原的历史记录 
+
+PS C:\Users\yxy> 
+ *  还原的历史记录 
+
+PS C:\Users\yxy> 
+ *  还原的历史记录 
+
+try { . "c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+PS D:\> R
+d:
+PS D:\> R
+d:
+PS D:\> r CMD BATCH D:\RWORKSPACE\CMD_TEST.R
+Invoke-History : 找不到接受实际参数“BATCH”的位置形式参数。
+所在位置 行:1 字符: 1
++ r CMD BATCH D:\RWORKSPACE\CMD_TEST.R
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-History]，ParameterBindingE 
+    xception
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Comman  
+   ds.InvokeHistoryCommand
+ 
+PS D:\> r CMD D:\RWORKSPACE\CMD_TEST.R
+Invoke-History : 找不到接受实际参数“D:\RWORKSPACE\CMD_TEST.R”的位置形式参数。
+所在位置 行:1 字符: 1
++ r CMD D:\RWORKSPACE\CMD_TEST.R
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-History]，ParameterBindingE 
+    xception
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Comman  
+   ds.InvokeHistoryCommand
+ 
+PS D:\> r CMD BATCH D:\RWORKSPACE\CMD_TEST.R
+Invoke-History : 找不到接受实际参数“BATCH”的位置形式参数。
+所在位置 行:1 字符: 1
++ r CMD BATCH D:\RWORKSPACE\CMD_TEST.R
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-History]，ParameterBindingE 
+    xception
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Comman  
+   ds.InvokeHistoryCommand
+ 
+PS D:\>
