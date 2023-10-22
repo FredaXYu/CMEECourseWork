@@ -26,7 +26,7 @@ loads_tree_height <- function(path) {
     return (content)
 }        # unfinished 
 
-print(loads_tree_height("\..\Data\trees.csv"))
+print(loads_tree_height("../Data/trees.csv"))       # you, always this problem!!!!!!!  # you, solved on 22 Oct by trying
 
 ### teacher's codes
 
@@ -38,6 +38,7 @@ print(loads_tree_height("\..\Data\trees.csv"))
   
 #     return (height)
 # }
+
 
 ## My edited: 
 TreeHeight <- function(degrees, distance) {
@@ -54,9 +55,22 @@ TreeHeight <- function(degrees, distance) {
 
 TreeHeight(37, 40)
 
+# the empty object to be output
+# Firstly create a matrix, then use it in the dataframe: https://www.geeksforgeeks.org/how-to-create-an-empty-dataframe-in-r/
+zero_matrix <- matrix(ncol = 0, nrow = 0) 
+
+MyDF = as.data.frame(zero_matrix)
+print("MyDF", MyDF)
+print("zero_matrix", zero_matrix)
+output_object <- data.frame(zero_matrix)
+print("output_object", output_object)
 
 
+#save all data to csv file in results/
+# write.csv: x: the object to be written, preferably a matrix or data frame
+write.csv(readfile, paste("../Results/", name, "Output_TreeHeight.csv", sep=""), row.names=FALSE)  # cr. https://github.com/tashramsden/CMEECourseWork/blob/master/week3/code/get_TreeHeight.R
 
+write.csv(tree, "../Results/TreeHts.csv") 
 
 
 
