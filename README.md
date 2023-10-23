@@ -1,6 +1,13 @@
 # CMEECourseWork
 IC Silwood Park CMEE Coursework repository
 
+## Dev Environment: 
+- Windows system, VSCode: python3
+Windows system, R app
+- Windows system, R Studio
+- Windows system, terminal/powershell
+- Linux system Ubuntu, VSCode: python3, ipython, Rscript
+- Linux system, terminal
 
 ## License: 
 You may use ideas, but you should contribute it to correct resource. -- YU Xiaoyun
