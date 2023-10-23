@@ -1,0 +1,198 @@
+yxy1028@yxy-hp-borrowed:~$ cd Documents/GitHub/CMEECourseWork/week02/Code
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ ls
+align_seqs.py  boilerplate.py  cfexercises1.py  debug_example_19Oct.py  dictionary.py  lc1.py  lc2.py  MyExampleScript.py  oaks_debugme_me_fixed.py  tuple.py
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ touch basic_csv.py
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ ipython basic_csv.py
+Command 'ipython' not found, did you mean:
+  command 'ipython3' from deb ipython3 (7.31.1-1)
+  command 'xpython' from deb xpython (0.12.5-1build1)
+  command 'bpython' from deb bpython (0.22.1-2)
+Try: sudo apt install <deb name>
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ python3 basic_csv.py
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week02/Code/basic_csv.py", line 6, in <module>
+    with open('../data/testcsv.csv','r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../data/testcsv.csv'
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ python3 basic_csv.py
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week02/Code/basic_csv.py", line 6, in <module>
+    with open('../data/testcsv.csv','r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../data/testcsv.csv'
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ python3 basic_csv.py
+Traceback (most recent call last):
+  File "/home/yxy1028/Documents/GitHub/CMEECourseWork/week02/Code/basic_csv.py", line 6, in <module>
+    with open('../data/testcsv.csv','r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../data/testcsv.csv'
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ python3 basic_csv.py
+['Species', 'Infraorder', 'Family', 'Distribution', 'Body mass male (Kg)']
+The species is Species
+['Daubentonia_madagascariensis', 'Chiromyiformes ', 'Daubentoniidae', 'Madagascar', '2.7']
+The species is Daubentonia_madagascariensis
+['Allocebus_trichotis', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.1']
+The species is Allocebus_trichotis
+['Avahi_laniger', 'Lemuriformes', 'Indridae', 'America', '1.03']
+The species is Avahi_laniger
+['Avahi_occidentalis', 'Lemuriformes', 'Indridae', 'Madagascar', '0.814']
+The species is Avahi_occidentalis
+['Avahi_unicolor', 'Lemuriformes', 'Indridae', 'America', '0.83']
+The species is Avahi_unicolor
+['Cheirogaleus_adipicaudatus', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.2']
+The species is Cheirogaleus_adipicaudatus
+['Cheirogaleus_crossleyi', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.4']
+The species is Cheirogaleus_crossleyi
+['Cheirogaleus_major', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.45']
+The species is Cheirogaleus_major
+['Cheirogaleus_medius', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.217']
+The species is Cheirogaleus_medius
+['Species', 'Infraorder', 'Family', 'Distribution', 'Body mass male (Kg)']
+['Daubentonia_madagascariensis', 'Chiromyiformes ', 'Daubentoniidae', 'Madagascar', '2.7']
+['Allocebus_trichotis', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.1']
+['Avahi_laniger', 'Lemuriformes', 'Indridae', 'America', '1.03']
+['Avahi_occidentalis', 'Lemuriformes', 'Indridae', 'Madagascar', '0.814']
+['Avahi_unicolor', 'Lemuriformes', 'Indridae', 'America', '0.83']
+['Cheirogaleus_adipicaudatus', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.2']
+['Cheirogaleus_crossleyi', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.4']
+['Cheirogaleus_major', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.45']
+['Cheirogaleus_medius', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.217']
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ ls
+align_seqs.py  boilerplate.py   debug_example_19Oct.py  lc1.py  MyExampleScript.py        tuple.py
+basic_csv.py   cfexercises1.py  dictionary.py           lc2.py  oaks_debugme_me_fixed.py
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ 
+ *  History restored 
+
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ cd ../../
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork$ cd week03
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week03$ ls
+Code  Data  Mycodes  Notes  Readme.md  Records  Results  Sandbox  Seminar
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week03$ cd Code
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week03/Code$ ls
+20Oct.r             browse.R          histogram.R                 pre-allocation.r  Rplots.pdf    TreeHeight.R  Vectorize1.R  Week03_R_17Oct.r
+Baby_steps_21Oct.R  Data_wrangling.R  IMPORTANT_Week03_R_17Oct.r  Ricker.R          self_learn.r  try.R         Vectorize2.R
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week03/Code$ Rscript hitogram.R
+Fatal error: cannot open file 'hitogram.R': No such file or directory
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week03/Code$ Rscript histogram.R
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week03/Code$ Rscript histogram.R
+[1] "something"
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week03/Code$ cd ../../week02/Code
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ ls
+align_seqs.py  basic_io2.py    cfexercises1.py  debug_example_19Oct.py  lc1.py    MyExampleScript.py        scope.py              tuple.py
+basic_csv.py   basic_io3.py    cfexercises2.py  debugme.py              lc2.py    oaks_debugme_me_fixed.py  sysargv.py            using_name.py
+basic_io1.py   boilerplate.py  control_flow.py  dictionary.py           loops.py  oaks.py                   test_control_flow.py
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ python3 loops.py
+0
+1
+2
+3
+4
+0
+2
+geronimo!
+3.0
+True
+False
+0
+1
+12
+123
+1234
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+yxy1028@yxy-hp-borrowed:~/Documents/GitHub/CMEECourseWork/week02/Code$ 
