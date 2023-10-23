@@ -1,0 +1,239 @@
+
+R version 4.3.1 (2023-06-16 ucrt) -- "Beagle Scouts"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+> 
+> extra<- read.table("SparrowSize.txt", header=T, sep="\t")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SparrowSize.txt': No such file or directory
+> 
+> 
+> 
+> 
+> 
+> extra<- read.table("SparrowSize.txt", header=T, sep="\t")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SparrowSize.txt': No such file or directory
+> 
+> extra<- read.table("..SparrowSize.csv", header=T, sep="\t")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '..SparrowSize.csv': No such file or directory
+> extra<- read.table("./SparrowSize.csv", header=T, sep="\t")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file './SparrowSize.csv': No such file or directory
+> pwd
+Error: object 'pwd' not found
+> getwd()
+[1] "C:/Users/yxy/Documents"
+> setwd("C:/Users/yxy/Github_desktop/CMEECourseWork")
+> setwd("../week04/Code")
+Error in setwd("../week04/Code") : cannot change working directory
+> setwd("C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Code")
+> print(extra)
+Error: object 'extra' not found
+> 
+> print("sssssssssssssssssssss")
+[1] "sssssssssssssssssssss"
+> 
+> 
+> 
+> setwd("../Data")
+> getwd()
+[1] "C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Data"
+> 
+> 
+> "\t")
+Error: unexpected ')' in ""\t")"
+> getwd()
+[1] "C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Data"
+> setwd("../Code/")
+> "\t")
+Error: unexpected ')' in ""\t")"
+> "\t")
+Error: unexpected ')' in ""\t")"
+> setwd("../Code")
+> "\t")
+Error: unexpected ')' in ""\t")"
+> "\t")
+Error: unexpected ')' in ""\t")"
+> content <- read.table("SparrowSize.txt", header=T, sep="\t")
+> print("sssssssssssssssssssss")
+[1] "sssssssssssssssssssss"
+> content <- read.table("SparrowSize.txt", header=T, sep="\t")   #
+> print("content: ", content)
+Error in print.default("content: ", content) : 
+  invalid printing digits -2147483648
+> print("sssssssssssssssssssss")
+[1] "sssssssssssssssssssss"
+> content <- read.table("SparrowSize.txt", header=T, sep="\t")   #
+> source("C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Code/HO2_23Oct.R", echo=TRUE)
+
+> print("sssssssssssssssssssss")
+[1] "sssssssssssssssssssss"
+
+> content <- read.table("SparrowSize.txt", header=T, sep="\t")   #
+
+> print("content: ", content)
+Error in print.default("content: ", content) : 
+  invalid printing digits -2147483648
+> print("sssssssssssssssssssss")
+[1] "sssssssssssssssssssss"
+> content <- read.table("SparrowSize.txt", header=T, sep="\t")   #
+> 
+> print("content: ", content)
+Error in print.default("content: ", content) : 
+  invalid printing digits -2147483648
+> print("ssss  start  sssssssss")
+[1] "ssss  start  sssssssss"
+> content <- read.table("SparrowSize.txt", header=T, sep="\t")   #
+> 
+> print("content: ", content)
+Error in print.default("content: ", content) : 
+  invalid printing digits -2147483648
+> source("C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Code/HO2_23Oct.R", echo=TRUE)
+
+> print("ssss  start  sssssssss")
+[1] "ssss  start  sssssssss"
+
+> content <- read.table("SparrowSize.txt", header=T, sep="\t")   #
+
+> print("content: ", content)
+Error in print.default("content: ", content) : 
+  invalid printing digits -2147483648
+> source("C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Code/HO2_23Oct.R", echo=TRUE)
+
+> print("ssss  start  sssssssss")
+[1] "ssss  start  sssssssss"
+
+> content <- read.table("SparrowSize.txt", header=T, sep="\t")   #
+
+> print("content: ", content)
+Error in print.default("content: ", content) : 
+  invalid printing digits -2147483648
+> setwd("../../week03/Code")
+> getwd()
+[1] "C:/Users/yxy/Github_desktop/CMEECourseWork/week03/Code"
+> source("trees_read_csv.r", echo = TRUE)
+> source("trees_read_csv.r", echo = TRUE)
+
+> print("start")
+[1] "start"
+
+> MyData <- read.csv("../data/trees.csv")
+
+> print("end")
+[1] "end"
+> source("trees_read_csv.r", echo = TRUE)
+
+> print("start")
+[1] "start"
+
+> MyData <- read.csv("../data/trees.csv")
+
+> a <- ls(pattern = "My*") # Check that MyData has appeared
+
+> print(a)
+[1] "MyData"
+
+> print("end")
+[1] "end"
+> getwd()
+[1] "C:/Users/yxy/Github_desktop/CMEECourseWork/week03/Code"
+> setwd("../../week04/Code")
+> getwd()
+[1] "C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Code"
+> content <- read.table("SparrowSize.txt", header=T, sep="\t")   #
+> "
++ print("content", content)
+Error: unexpected symbol in:
+""
+print("content"
+> source("C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Code/HO2_23Oct.R", echo=TRUE)
+Error in source("C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Code/HO2_23Oct.R",  : 
+  C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Code/HO2_23Oct.R:11:8: unexpected symbol
+10: 
+11: print("content
+           ^
+> ?mean
+> a <- ls(pattern = "My*") # Check that MyData has appeared
+> print(a)
+[1] "MyData"
+> a <- ls(pattern = "My*") # Check that MyData has appeared
+> print(a)
+[1] "MyData"
+> a <- ls(pattern = "My*") # Check that MyData has appeared
+> print(a)
+[1] "MyData"
+> dir("../results/") # Check if it worked
+character(0)
+> print(a)
+[1] "MyData"
+> MyData <- read.csv("../Data/trees.csv", header = TRUE) # import with headers
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '../Data/trees.csv': No such file or directory
+> getwd()
+[1] "C:/Users/yxy/Github_desktop/CMEECourseWork/week04/Code"
+> setwd("../../week03/Code")
+> MyData <- read.csv("../Data/trees.csv", header = TRUE) # import with headers
+> MyData <- read.csv("../Data/trees.csv", header = TRUE) # import with headers
+> write.csv(MyData, "../Results/MyData.csv") #write it out as a new file
+> write.table(MyData[1,], file = "../Results/MyData.csv",append=TRUE) # Append to it
+Warning message:
+In write.table(MyData[1, ], file = "../Results/MyData.csv", append = TRUE) :
+  给文件加列名
+> write.table(MyData[1,], file = "../Results/MyData.csv",append=TRUE) # Append to it
+Warning message:
+In write.table(MyData[1, ], file = "../Results/MyData.csv", append = TRUE) :
+  给文件加列名
+> write.table(MyData[1,], file = "../Results/MyData.csv",append=TRUE) # Append to it
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file '../Results/MyData.csv': Permission denied
+> write.csv(MyData, "../Results/MyData.csv", row.names=TRUE) # write row names
+> write.table(MyData[1,], file = "../Results/MyData.csv",append=TRUE) # Append to it
+Warning message:
+In write.table(MyData[1, ], file = "../Results/MyData.csv", append = TRUE) :
+  给文件加列名
+> write.table(MyData[1,], file = "../Results/MyData.csv",append=TRUE) # Append to it
+Warning message:
+In write.table(MyData[1, ], file = "../Results/MyData.csv", append = TRUE) :
+  给文件加列名
+> write.csv(MyData, "../Results/MyData.csv", row.names=TRUE) # write row names
+> source("basic_io.R")
+Error: node stack overflow
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error during wrapup: node stack overflow
+Error: no more error handlers available (recursive errors?); invoking 'abort' restart
+> getwd()
+[1] "C:/Users/yxy/Github_desktop/CMEECourseWork/week03/Code"
+> source("basic_io.R")
+Error: node stack overflow
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Error during wrapup: node stack overflow
+Error: no more error handlers available (recursive errors?); invoking 'abort' restart

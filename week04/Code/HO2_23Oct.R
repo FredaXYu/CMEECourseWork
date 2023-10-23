@@ -24,7 +24,7 @@ class(all_elements_Bill[5])  # "numeric"
 for (each in all_elements_Bill){
   class(each)
   # print(each)
-  if is.na(each)FALSE {
+  if is.na(each) == FALSE {
     # SOLUTION 1: append()
     # SOLUTION 2: c()
     all_elements_not_NA <- c(all_elements_not_NA, each)
