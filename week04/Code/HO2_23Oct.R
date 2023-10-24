@@ -1,6 +1,6 @@
 
-
-print("ssss  start  sssssssss")
+print
+print("=============== start this time outcome ===========================")
 content <- read.table("SparrowSize.txt", header=T, sep="\t")   # error is the path, and the setwd()
 
 a <- read.table("../Data/SparrowSize.txt", header=TRUE) 	
@@ -20,7 +20,39 @@ str(a) 	   # https://github.com/abiB1994/CMEECourseWork/blob/master/Week4/Code/D
 
 print(a$Bill[5])
 
+print("I'm using the easier solution, which does not use the MASK: ")
+#_____________________________________________
+print("The mean of the Bill is: ")
+mean(a$Bill, na.rm=TRUE)
 
+print("The variance of the Bill is: ")
+var(a$Bill, na.rm=TRUE)
+
+print("The standard deviation of the Bill is: ")
+sd(a$Bill, na.rm=TRUE)
+#_____________________________________________
+print("The mean of the Body Mass is: ")
+mean(a$Mass, na.rm=TRUE)
+
+print("The variance of the Bill is: ")
+var(a$Mass, na.rm=TRUE)
+
+print("The standard deviation of the Bill is: ")
+sd(a$Mass, na.rm=TRUE)
+#_____________________________________________
+print("The mean of the Wing Length is: ")
+mean(a$Wing, na.rm=TRUE)
+
+print("The variance of the Bill is: ")
+var(a$Wing, na.rm=TRUE)
+
+print("The standard deviation of the Bill is: ")
+sd(a$Wing, na.rm=TRUE)
+
+
+
+print("The end of the easier method. ")
+print("--------------------------------")
 
 ###################################################
 
@@ -38,7 +70,7 @@ all_elements_Bill <- a$Bill
 
 # mean_elements_not_NA    # don't write 'print'!!! This works now
 
-all_elements_not_NA <- c() # initialisation
+all_elements_not_NA <- c() # initialisation   # proooooooooooooooooooooooooblem 
 
 print("all_elements_not_NA")
 
@@ -47,7 +79,7 @@ print(all_elements_not_NA)
 all_elements_Bill[5]      # 13.4
 class(all_elements_Bill[5])  # "numeric"
 
-#for (each in all_elements_Bill){
+# for (each in all_elements_Bill){
 #  class (each)
 #  # print(each)
 #  if (is.na (each) == FALSE) {
@@ -55,11 +87,11 @@ class(all_elements_Bill[5])  # "numeric"
 #     all_elements_not_NA <- c(all_elements_not_NA, each)   # can work
 #  }
 #  else {
-#    
+# 
 #  }
-#  # print(all_elements_not_NA)   # ctrL + D to halt 
+#  # print(all_elements_not_NA)   # ctrL + D to halt
 #  # mean_elements_not_NA
-#}
+# }
 
 # solution 2: give index to each element 
 # I give up this idea since here is $ to select element index
