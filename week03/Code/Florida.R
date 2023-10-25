@@ -25,38 +25,44 @@ cor_year_temp <- function(year, temp)
 
     # Parameters: 
     #   year: a seqence of year numbers in order (from min to max)
-    #   temp: a list of numbers (assuming float)
+    #   temp: a list of numbers, now it can be a dictionary (assuming float)
     # Output: 
+    #   cor number 
 
-  new <- c()
-  for (i in 1:100)    # now I have problem of naming 100 things, it is in order 
-  {
-    name_key <- toString(i)
-    new <- c(new, c(name_key=temp[1]))
-  }
-  new
+  
+  # new <- c()
+  # for (i in 1:100)    # now I have problem of naming 100 things, it is in order 
+  # {
+  #   name_key <- toString(i)
+  #   new <- c(new, c(name_key=temp[1]))
+  # }
+  # new
+  
+  R_structure_to_dictionary(100)  # num to string dict, is a dict
+  
+  
   # sample(, replace=FALSE)
   
 }
 
 # I really really want this number to be possibly similar to 1. 
-cor_year_temp
+cor_year_temp(100, )
 
 
 
 ##########################################
 
 # Now I have a useful function, which is the dictionary (omit blood)
-R_structure_to_dictionary <- function()
+R_structure_to_dictionary <- function(num)
 {
   new <- c()
-  for (i in 1:100)    # now I have problem of naming 100 things
+  for (i in 1:num)    # now I have problem of naming 100 things
   {
     name_key <- toString(i)
     new <- c(new, name_key)
   }
   return (new)
 }
-R_structure_to_dictionary()
+R_structure_to_dictionary(100)
 
 
