@@ -22,21 +22,20 @@ plot(ats)
 
 cor_year_temp <- function(year, temp)
 {
-  '''
-    Parameters: 
-      year: a seqence of year numbers in order (from min to max)
-      temp: a list of numbers (assuming float)
-    Output: 
-      
-  '''
+
+    # Parameters: 
+    #   year: a seqence of year numbers in order (from min to max)
+    #   temp: a list of numbers (assuming float)
+    # Output: 
+
   new <- c()
-  for i in 1:100    # now I have problem of naming 100 things, it is in order 
+  for (i in 1:100)    # now I have problem of naming 100 things, it is in order 
   {
     name_key <- toString(i)
     new <- c(new, c(name_key=temp[1]))
   }
   new
-  sample(, replace=FALSE)
+  # sample(, replace=FALSE)
   
 }
 
@@ -48,11 +47,16 @@ cor_year_temp
 ##########################################
 
 # Now I have a useful function, which is the dictionary (omit blood)
-new <- c()
-for i in 1:100    # now I have problem of naming 100 things
+R_structure_to_dictionary <- function()
 {
-  name_key <- toString(i)
-  new <- c(new, name_key)
+  new <- c()
+  for (i in 1:100)    # now I have problem of naming 100 things
+  {
+    name_key <- toString(i)
+    new <- c(new, name_key)
+  }
+  return (new)
 }
-new
+R_structure_to_dictionary()
+
 
