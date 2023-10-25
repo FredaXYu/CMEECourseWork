@@ -1,0 +1,52 @@
+C:\Users\yxy\Github_desktop\CMEECourseWork\week04\Code>Rscript HO2_23Oct.R
+function (x, ...)
+UseMethod("print")
+<bytecode: 0x0000016caa9c96d0>
+<environment: namespace:base>
+[1] "=============== start this time outcome ==========================="
+'data.frame':   1770 obs. of  8 variables:
+ $ BirdID: int  1 2 2 2 2 2 2 2 2 2 ...
+ $ Year  : int  2002 2001 2002 2003 2004 2004 2004 2004 2004 2005 ...
+ $ Tarsus: num  16.9 16.8 17.2 17.5 17.8 ...
+ $ Bill  : num  NA NA NA 13.5 13.4 ...
+ $ Wing  : num  76 76 76 76 77 78 77 77 77 77 ...
+ $ Mass  : num  23.6 27.5 28.1 27.8 26.5 ...
+ $ Sex   : int  0 1 1 1 1 1 1 1 1 1 ...
+ $ Sex.1 : chr  "female" "male" "male" "male" ...
+[1] "Xinglebani here"
+[1] 13.4
+[1] "I'm using the easier solution, which does not use the MASK: "
+[1] "The mean of the Bill is: "
+[1] 13.30307
+[1] "The variance of the Bill is: "
+[1] 0.357642
+[1] "The standard deviation of the Bill is: "
+[1] 0.5980318
+[1] "The mean of the Body Mass is: "
+[1] 27.75704
+[1] "The variance of the Bill is: "
+[1] 4.488054
+[1] "The standard deviation of the Bill is: "
+[1] 2.118503
+[1] "The mean of the Wing Length is: "
+[1] 77.40206
+[1] "The variance of the Bill is: "
+[1] 5.836625
+[1] "The standard deviation of the Bill is: "
+[1] 2.415911
+[1] "The end of the easier method. "
+[1] "--------------------------------"
+[1] "Hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+[1] "all_elements_not_NA"
+NULL
+[1] 13.4
+[1] "numeric"
+[1] "index_na_elements"
+logical(0)
+Warning message:
+In mean.default(all_elements_not_NA, na.rm = FALSE) :
+  argument is not numeric or logical: returning NA
+[1] "mean of all elements not NA in Bill: "
+[1] NA
+[1] "variance of all elements not NA in Bill: "
+[1] "ss  end  "

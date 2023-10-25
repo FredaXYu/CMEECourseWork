@@ -13,6 +13,7 @@ str(a) 	   # https://github.com/abiB1994/CMEECourseWork/blob/master/Week4/Code/D
 
 # ind = which(a$Bill.mass.unit == 'mg')    # don't understand
 
+print("Xinglebani here")
 
 #########################################
 
