@@ -18,7 +18,23 @@
 Biological Computing in R, 
 
 ### Coursework URLs: 
+
 Bootcamp Submission 3
+到期日期: November 6, 2023 6:00 PM
+Computing BootCamp
+
+说明
+Practicals due: 
+https://mhasoba.github.io/TheMulQuaBio/notebooks/07-R.html#tree-heights
+要从An example utility function 开始做
+
+https://mhasoba.github.io/TheMulQuaBio/notebooks/07-R.html#a-vectorization-challenge
+https://mhasoba.github.io/TheMulQuaBio/notebooks/07-R.html#is-florida-getting-warmer
+https://mhasoba.github.io/TheMulQuaBio/notebooks/08-Data_R.html#data-wrangling-with-tidyverse
+https://mhasoba.github.io/TheMulQuaBio/notebooks/08-Data_R.html#body-mass-distributions
+https://mhasoba.github.io/TheMulQuaBio/notebooks/08-Data_R.html#visualizing-regression-analyses
+https://mhasoba.github.io/TheMulQuaBio/notebooks/08-Data_R.html#mapping
+In addition, all in-class scripts from both R chapters
 
 
 ### Code Files: 
