@@ -48,7 +48,14 @@ mat_new2 <- as.matrix(mat_new)
 print("Using apply(): ")
 mat_new2
 
+##################################################
+# https://stackoverflow.com/questions/17506691/converting-from-a-list-to-numeric-in-r
 
+# Transform the data from list to numeric form and put it in the matrix dataNum.
+
+for (i in 1:dim(data)[2]) {
+  dataNum[,i] <- c(as.numeric(data[[i]]))
+}
 
 
 

@@ -200,11 +200,13 @@ print("Now it's standard answer: ")
 # a$Bill                    # can work
 # print(a$Bill)             # can work 
 a1 <- subset(a, a$Tarsus!="NA")
+class(a1)                  # data.frame
 print("sd of Tarsus: ")
 # sd(a1)                     # bug
-a1_new <- as.matrix(a1)
+a1_new <- as.matrix(a1)     # BE CAUCIOUS!!!!!!!!!!!
 # a1_new                     # can work
 class(a1_new[3])           # character 
+a1_new2 <- array(a1_new)
 sd(a1_new)
 
 
