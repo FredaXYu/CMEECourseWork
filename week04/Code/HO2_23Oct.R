@@ -180,7 +180,7 @@ print("ss  end  ")
 
 ## variance: 
 
-## standatd deviation: 
+## standard deviation: 
 
 
 #############################################################
@@ -190,11 +190,26 @@ print("ss  end  ")
 
 
 
-
+#############################################################
 #############################################################
 
 # correct answer: https://bb.imperial.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_39610_1&content_id=_2926878_1
 # SwS 04 Lecture - Precision and Standard Error 22:22
+
+print("Now it's standard answer: ")
+# a$Bill                    # can work
+# print(a$Bill)             # can work 
+a1 <- subset(a, a$Tarsus!="NA")
+print("sd of Tarsus: ")
+# sd(a1)                     # bug
+a1_new <- as.matrix(a1)
+# a1_new                     # can work
+class(a1_new[3])           # character 
+sd(a1_new)
+
+
+
+
 
 
 
