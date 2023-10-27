@@ -1,0 +1,507 @@
+# 27Oct Windows Rstudio terminal result, for dataWrangTidy.R
+
+
+
+
+
+Microsoft Windows [版本 10.0.19045.2486]
+(c) Microsoft Corporation。保留所有权利。
+
+C:\Users\yxy\Documents>ls
+ DVDFab         'My Music'      Picosmos        desktop.ini
+ LiveUpdate     'My Pictures'   R-TT           ''$'\350\207\252\345\256\232\344\271\211'' Office '$'\346\250\241\346\235\277'
+'My ISO Files'  'My Videos'    'WeChat Files'
+
+C:\Users\yxy\Documents>cd ../
+
+C:\Users\yxy>ls
+'3D Objects'
+ AppData
+'Application Data'
+ Contacts
+ Cookies
+ Desktop
+ Documents
+ Downloads
+ Favorites
+ Github_desktop
+ IntelGraphicsProfiles
+ Links
+'Local Settings'
+ Music
+'My Documents'
+ NTUSER.DAT
+ NTUSER.DAT{cd0295b7-a223-11ed-8c7b-48f17f7961b0}.TM.blf
+ NTUSER.DAT{cd0295b7-a223-11ed-8c7b-48f17f7961b0}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{cd0295b7-a223-11ed-8c7b-48f17f7961b0}.TMContainer00000000000000000002.regtrans-ms
+ NetHood
+ OneDrive
+ Pictures
+ PrintHood
+ Recent
+'Saved Games'
+ Searches
+ SendTo
+ Templates
+ Videos
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+''$'\343\200\214\345\274\200\345\247\213\343\200\215\350\217\234\345\215\225'
+
+C:\Users\yxy>cd GutHub
+系统找不到指定的路径。
+
+C:\Users\yxy>cd Github_desktop
+
+C:\Users\yxy\Github_desktop>ls
+CMEECourseWork
+
+C:\Users\yxy\Github_desktop>cd CMEECourseWork
+
+C:\Users\yxy\Github_desktop\CMEECourseWork>ls
+README.md  seminars  week01  week02  week03  week04  week06
+
+C:\Users\yxy\Github_desktop\CMEECourseWork>cd week03
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03>ls
+Code  Data  Mycodes  Notes  Readme.md  Records  Results
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03>cd Code
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>ls
+20Oct.r             DataWrangTidy.R   IMPORTANT_Week03_R_17Oct.r  Rplots.pdf    Vectorize2.R  histogram.R       trees.csv
+Baby_steps_21Oct.R  Data_wrangling.R  PoundHill.R                 TreeHeight.R  basic_io.R    pre-allocation.r  trees_read_csv.r
+DataWrang.R         Florida.R         Ricker.R                    Vectorize1.R  browse.R      self_learn.r      try.R
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>Rscript PoundHill.R
+[1] "matrix" "array"
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>Rscript PoundHill.R
+[1] "matrix" "array"
+[1] "data.frame"
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>characterRencodingread.csv()read.table()file
+'characterRencodingread.csv' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>ls
+20Oct.r             DataWrangTidy.R   IMPORTANT_Week03_R_17Oct.r  Rplots.pdf    Vectorize2.R  histogram.R       trees.csv
+Baby_steps_21Oct.R  Data_wrangling.R  PoundHill.R                 TreeHeight.R  basic_io.R    pre-allocation.r  trees_read_csv.r
+DataWrang.R         Florida.R         Ricker.R                    Vectorize1.R  browse.R      self_learn.r      try.R
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>file -i ../Data/*.csv
+../Data/PoundHillData.csv:     text/csv; charset=us-ascii
+../Data/PoundHillMetaData.csv: text/plain; charset=us-ascii
+../Data/TestOaksData.csv:      text/csv; charset=us-ascii
+../Data/trees.csv:             text/csv; charset=us-ascii
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>file -Ifile -i
+file: unknown option -- I
+file: Cannot open `ile' (No such file or directory)
+Usage: file [-bcCdEhikLlNnprsSvzZ0] [--apple] [--extension] [--mime-encoding]
+            [--mime-type] [-e <testname>] [-F <separator>]  [-f <namefile>]
+            [-m <magicfiles>] [-P <parameter=value>] [--exclude-quiet]
+            <file> ...
+       file -C [-m <magicfiles>]
+       file [--help]
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>Rscript PoundHill.R
+[1] "matrix" "array"
+[1] "data.frame"
+     V1                     V2        V3        V4        V5        V6
+[1,] "Cultivation"          "october" "october" "october" "october" "october"
+[2,] "Block"                "a"       "a"       "a"       "a"       "a"
+[3,] "Plot"                 "1"       "1"       "1"       "1"       "1"
+[4,] "Quadrat"              "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] "Achillea millefolium" "4"       "8"       "3"       "20"      "6"
+[6,] "Agrostis gigantea"    ""        ""        ""        ""        "15"
+     V7    V8    V9    V10   V11   V12     V13     V14     V15     V16
+[1,] "may" "may" "may" "may" "may" "march" "march" "march" "march" "march"
+[2,] "a"   "a"   "a"   "a"   "a"   "a"     "a"     "a"     "a"     "a"
+[3,] "2"   "2"   "2"   "2"   "2"   "3"     "3"     "3"     "3"     "3"
+[4,] "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"
+[5,] "4"   ""    ""    ""    ""    "1"     "2"     "5"     "12"    "2"
+[6,] ""    ""    ""    ""    "2"   "8"     ""      "53"    "16"    "47"
+     V17     V18   V19   V20   V21   V22   V23     V24     V25     V26
+[1,] "march" "may" "may" "may" "may" "may" "march" "march" "march" "march"
+[2,] "a"     "b"   "b"   "b"   "b"   "b"   "b"     "b"     "b"     "b"
+[3,] "3"     "4"   "4"   "4"   "4"   "4"   "5"     "5"     "5"     "5"
+[4,] "Q6"    "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"
+[5,] ""      ""    ""    ""    ""    ""    "3"     "8"     "3"     "7"
+[6,] "12"    "68"  "57"  "83"  "88"  "89"  "10"    "29"    "24"    "24"
+     V27     V28       V29       V30       V31       V32     V33     V34
+[1,] "march" "october" "october" "october" "october" "march" "march" "march"
+[2,] "b"     "b"       "b"       "b"       "b"       "c"     "c"     "c"
+[3,] "5"     "6"       "6"       "6"       "6"       "7"     "7"     "7"
+[4,] "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q1"    "Q2"    "Q3"
+[5,] "20"    "1"       ""        "3"       "1"       "24"    "26"    "37"
+[6,] "43"    "143"     "39"      "10"      "67"      "62"    "22"    "37"
+     V35     V36     V37       V38       V39       V40       V41       V42
+[1,] "march" "march" "october" "october" "october" "october" "october" "may"
+[2,] "c"     "c"     "c"       "c"       "c"       "c"       "c"       "c"
+[3,] "7"     "7"     "8"       "8"       "8"       "8"       "8"       "9"
+[4,] "Q4"    "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q5"      "Q1"
+[5,] "37"    "100"   "2"       ""        ""        "1"       ""        ""
+[6,] "4"     "27"    "198"     "96"      "99"      "48"      "351"     "57"
+     V43   V44   V45   V46   V47     V48     V49     V50     V51     V52
+[1,] "may" "may" "may" "may" "march" "march" "march" "march" "march" "march"
+[2,] "c"   "c"   "c"   "c"   "d"     "d"     "d"     "d"     "d"     "d"
+[3,] "9"   "9"   "9"   "9"   "10"    "10"    "10"    "10"    "10"    "10"
+[4,] "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"    "Q6"
+[5,] ""    "7"   ""    "5"   "7"     "2"     "2"     "9"     "4"     "10"
+[6,] "41"  "65"  "38"  "45"  "259"   "33"    "96"    "291"   "19"    "80"
+     V53   V54   V55   V56       V57       V58       V59       V60
+[1,] "may" "may" "may" "october" "october" "october" "october" "october"
+[2,] "d"   "d"   "d"   "d"       "d"       "d"       "d"       "d"
+[3,] "12"  "12"  "12"  "11"      "11"      "11"      "11"      "11"
+[4,] "Q1"  "Q2"  "Q4"  "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] ""    ""    ""    ""        ""        "12"      "6"       "5"
+[6,] "33"  "145" "45"  "62"      "25"      "57"      "113"     "12"
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>Rscript PoundHill.R
+[1] "matrix" "array"
+[1] "data.frame"
+[1] "here"
+     V1                     V2        V3        V4        V5        V6
+[1,] "Cultivation"          "october" "october" "october" "october" "october"
+[2,] "Block"                "a"       "a"       "a"       "a"       "a"
+[3,] "Plot"                 "1"       "1"       "1"       "1"       "1"
+[4,] "Quadrat"              "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] "Achillea millefolium" "4"       "8"       "3"       "20"      "6"
+[6,] "Agrostis gigantea"    ""        ""        ""        ""        "15"
+     V7    V8    V9    V10   V11   V12     V13     V14     V15     V16
+[1,] "may" "may" "may" "may" "may" "march" "march" "march" "march" "march"
+[2,] "a"   "a"   "a"   "a"   "a"   "a"     "a"     "a"     "a"     "a"
+[3,] "2"   "2"   "2"   "2"   "2"   "3"     "3"     "3"     "3"     "3"
+[4,] "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"
+[5,] "4"   ""    ""    ""    ""    "1"     "2"     "5"     "12"    "2"
+[6,] ""    ""    ""    ""    "2"   "8"     ""      "53"    "16"    "47"
+     V17     V18   V19   V20   V21   V22   V23     V24     V25     V26
+[1,] "march" "may" "may" "may" "may" "may" "march" "march" "march" "march"
+[2,] "a"     "b"   "b"   "b"   "b"   "b"   "b"     "b"     "b"     "b"
+[3,] "3"     "4"   "4"   "4"   "4"   "4"   "5"     "5"     "5"     "5"
+[4,] "Q6"    "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"
+[5,] ""      ""    ""    ""    ""    ""    "3"     "8"     "3"     "7"
+[6,] "12"    "68"  "57"  "83"  "88"  "89"  "10"    "29"    "24"    "24"
+     V27     V28       V29       V30       V31       V32     V33     V34
+[1,] "march" "october" "october" "october" "october" "march" "march" "march"
+[2,] "b"     "b"       "b"       "b"       "b"       "c"     "c"     "c"
+[3,] "5"     "6"       "6"       "6"       "6"       "7"     "7"     "7"
+[4,] "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q1"    "Q2"    "Q3"
+[5,] "20"    "1"       ""        "3"       "1"       "24"    "26"    "37"
+[6,] "43"    "143"     "39"      "10"      "67"      "62"    "22"    "37"
+     V35     V36     V37       V38       V39       V40       V41       V42
+[1,] "march" "march" "october" "october" "october" "october" "october" "may"
+[2,] "c"     "c"     "c"       "c"       "c"       "c"       "c"       "c"
+[3,] "7"     "7"     "8"       "8"       "8"       "8"       "8"       "9"
+[4,] "Q4"    "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q5"      "Q1"
+[5,] "37"    "100"   "2"       ""        ""        "1"       ""        ""
+[6,] "4"     "27"    "198"     "96"      "99"      "48"      "351"     "57"
+     V43   V44   V45   V46   V47     V48     V49     V50     V51     V52
+[1,] "may" "may" "may" "may" "march" "march" "march" "march" "march" "march"
+[2,] "c"   "c"   "c"   "c"   "d"     "d"     "d"     "d"     "d"     "d"
+[3,] "9"   "9"   "9"   "9"   "10"    "10"    "10"    "10"    "10"    "10"
+[4,] "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"    "Q6"
+[5,] ""    "7"   ""    "5"   "7"     "2"     "2"     "9"     "4"     "10"
+[6,] "41"  "65"  "38"  "45"  "259"   "33"    "96"    "291"   "19"    "80"
+     V53   V54   V55   V56       V57       V58       V59       V60
+[1,] "may" "may" "may" "october" "october" "october" "october" "october"
+[2,] "d"   "d"   "d"   "d"       "d"       "d"       "d"       "d"
+[3,] "12"  "12"  "12"  "11"      "11"      "11"      "11"      "11"
+[4,] "Q1"  "Q2"  "Q4"  "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] ""    ""    ""    ""        ""        "12"      "6"       "5"
+[6,] "33"  "145" "45"  "62"      "25"      "57"      "113"     "12"
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>Rscript PoundHill.R
+[1] "matrix" "array"
+     FieldName
+1  Cultivation
+2        Block
+3         Plot
+4      Quadrat
+5 SpeciesCount
+                                                           Description
+1  Cultivation treatments applied in three months: october, may, march
+2                                            Treatment blocks ids: a-d
+3                                 Plot ids under each treatment : 1-12
+4                  Sampling quadrats (25x50 cm each) per plot: Q1--Q6
+5                 Number of individuals of species (count) per quadrat
+[1] "data.frame"
+[1] "here"
+     V1                     V2        V3        V4        V5        V6
+[1,] "Cultivation"          "october" "october" "october" "october" "october"
+[2,] "Block"                "a"       "a"       "a"       "a"       "a"
+[3,] "Plot"                 "1"       "1"       "1"       "1"       "1"
+[4,] "Quadrat"              "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] "Achillea millefolium" "4"       "8"       "3"       "20"      "6"
+[6,] "Agrostis gigantea"    ""        ""        ""        ""        "15"
+     V7    V8    V9    V10   V11   V12     V13     V14     V15     V16
+[1,] "may" "may" "may" "may" "may" "march" "march" "march" "march" "march"
+[2,] "a"   "a"   "a"   "a"   "a"   "a"     "a"     "a"     "a"     "a"
+[3,] "2"   "2"   "2"   "2"   "2"   "3"     "3"     "3"     "3"     "3"
+[4,] "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"
+[5,] "4"   ""    ""    ""    ""    "1"     "2"     "5"     "12"    "2"
+[6,] ""    ""    ""    ""    "2"   "8"     ""      "53"    "16"    "47"
+     V17     V18   V19   V20   V21   V22   V23     V24     V25     V26
+[1,] "march" "may" "may" "may" "may" "may" "march" "march" "march" "march"
+[2,] "a"     "b"   "b"   "b"   "b"   "b"   "b"     "b"     "b"     "b"
+[3,] "3"     "4"   "4"   "4"   "4"   "4"   "5"     "5"     "5"     "5"
+[4,] "Q6"    "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"
+[5,] ""      ""    ""    ""    ""    ""    "3"     "8"     "3"     "7"
+[6,] "12"    "68"  "57"  "83"  "88"  "89"  "10"    "29"    "24"    "24"
+     V27     V28       V29       V30       V31       V32     V33     V34
+[1,] "march" "october" "october" "october" "october" "march" "march" "march"
+[2,] "b"     "b"       "b"       "b"       "b"       "c"     "c"     "c"
+[3,] "5"     "6"       "6"       "6"       "6"       "7"     "7"     "7"
+[4,] "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q1"    "Q2"    "Q3"
+[5,] "20"    "1"       ""        "3"       "1"       "24"    "26"    "37"
+[6,] "43"    "143"     "39"      "10"      "67"      "62"    "22"    "37"
+     V35     V36     V37       V38       V39       V40       V41       V42
+[1,] "march" "march" "october" "october" "october" "october" "october" "may"
+[2,] "c"     "c"     "c"       "c"       "c"       "c"       "c"       "c"
+[3,] "7"     "7"     "8"       "8"       "8"       "8"       "8"       "9"
+[4,] "Q4"    "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q5"      "Q1"
+[5,] "37"    "100"   "2"       ""        ""        "1"       ""        ""
+[6,] "4"     "27"    "198"     "96"      "99"      "48"      "351"     "57"
+     V43   V44   V45   V46   V47     V48     V49     V50     V51     V52
+[1,] "may" "may" "may" "may" "march" "march" "march" "march" "march" "march"
+[2,] "c"   "c"   "c"   "c"   "d"     "d"     "d"     "d"     "d"     "d"
+[3,] "9"   "9"   "9"   "9"   "10"    "10"    "10"    "10"    "10"    "10"
+[4,] "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"    "Q6"
+[5,] ""    "7"   ""    "5"   "7"     "2"     "2"     "9"     "4"     "10"
+[6,] "41"  "65"  "38"  "45"  "259"   "33"    "96"    "291"   "19"    "80"
+     V53   V54   V55   V56       V57       V58       V59       V60
+[1,] "may" "may" "may" "october" "october" "october" "october" "october"
+[2,] "d"   "d"   "d"   "d"       "d"       "d"       "d"       "d"
+[3,] "12"  "12"  "12"  "11"      "11"      "11"      "11"      "11"
+[4,] "Q1"  "Q2"  "Q4"  "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] ""    ""    ""    ""        ""        "12"      "6"       "5"
+[6,] "33"  "145" "45"  "62"      "25"      "57"      "113"     "12"
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>Rscript PoundHill.R
+[1] "matrix" "array"
+[1] "Here1"
+     FieldName
+1  Cultivation
+2        Block
+3         Plot
+4      Quadrat
+5 SpeciesCount
+                                                           Description
+1  Cultivation treatments applied in three months: october, may, march
+2                                            Treatment blocks ids: a-d
+3                                 Plot ids under each treatment : 1-12
+4                  Sampling quadrats (25x50 cm each) per plot: Q1--Q6
+5                 Number of individuals of species (count) per quadrat
+[1] "data.frame"
+[1] "Here2"
+[1] "here"
+     V1                     V2        V3        V4        V5        V6
+[1,] "Cultivation"          "october" "october" "october" "october" "october"
+[2,] "Block"                "a"       "a"       "a"       "a"       "a"
+[3,] "Plot"                 "1"       "1"       "1"       "1"       "1"
+[4,] "Quadrat"              "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] "Achillea millefolium" "4"       "8"       "3"       "20"      "6"
+[6,] "Agrostis gigantea"    ""        ""        ""        ""        "15"
+     V7    V8    V9    V10   V11   V12     V13     V14     V15     V16
+[1,] "may" "may" "may" "may" "may" "march" "march" "march" "march" "march"
+[2,] "a"   "a"   "a"   "a"   "a"   "a"     "a"     "a"     "a"     "a"
+[3,] "2"   "2"   "2"   "2"   "2"   "3"     "3"     "3"     "3"     "3"
+[4,] "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"
+[5,] "4"   ""    ""    ""    ""    "1"     "2"     "5"     "12"    "2"
+[6,] ""    ""    ""    ""    "2"   "8"     ""      "53"    "16"    "47"
+     V17     V18   V19   V20   V21   V22   V23     V24     V25     V26
+[1,] "march" "may" "may" "may" "may" "may" "march" "march" "march" "march"
+[2,] "a"     "b"   "b"   "b"   "b"   "b"   "b"     "b"     "b"     "b"
+[3,] "3"     "4"   "4"   "4"   "4"   "4"   "5"     "5"     "5"     "5"
+[4,] "Q6"    "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"
+[5,] ""      ""    ""    ""    ""    ""    "3"     "8"     "3"     "7"
+[6,] "12"    "68"  "57"  "83"  "88"  "89"  "10"    "29"    "24"    "24"
+     V27     V28       V29       V30       V31       V32     V33     V34
+[1,] "march" "october" "october" "october" "october" "march" "march" "march"
+[2,] "b"     "b"       "b"       "b"       "b"       "c"     "c"     "c"
+[3,] "5"     "6"       "6"       "6"       "6"       "7"     "7"     "7"
+[4,] "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q1"    "Q2"    "Q3"
+[5,] "20"    "1"       ""        "3"       "1"       "24"    "26"    "37"
+[6,] "43"    "143"     "39"      "10"      "67"      "62"    "22"    "37"
+     V35     V36     V37       V38       V39       V40       V41       V42
+[1,] "march" "march" "october" "october" "october" "october" "october" "may"
+[2,] "c"     "c"     "c"       "c"       "c"       "c"       "c"       "c"
+[3,] "7"     "7"     "8"       "8"       "8"       "8"       "8"       "9"
+[4,] "Q4"    "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q5"      "Q1"
+[5,] "37"    "100"   "2"       ""        ""        "1"       ""        ""
+[6,] "4"     "27"    "198"     "96"      "99"      "48"      "351"     "57"
+     V43   V44   V45   V46   V47     V48     V49     V50     V51     V52
+[1,] "may" "may" "may" "may" "march" "march" "march" "march" "march" "march"
+[2,] "c"   "c"   "c"   "c"   "d"     "d"     "d"     "d"     "d"     "d"
+[3,] "9"   "9"   "9"   "9"   "10"    "10"    "10"    "10"    "10"    "10"
+[4,] "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"    "Q6"
+[5,] ""    "7"   ""    "5"   "7"     "2"     "2"     "9"     "4"     "10"
+[6,] "41"  "65"  "38"  "45"  "259"   "33"    "96"    "291"   "19"    "80"
+     V53   V54   V55   V56       V57       V58       V59       V60
+[1,] "may" "may" "may" "october" "october" "october" "october" "october"
+[2,] "d"   "d"   "d"   "d"       "d"       "d"       "d"       "d"
+[3,] "12"  "12"  "12"  "11"      "11"      "11"      "11"      "11"
+[4,] "Q1"  "Q2"  "Q4"  "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] ""    ""    ""    ""        ""        "12"      "6"       "5"
+[6,] "33"  "145" "45"  "62"      "25"      "57"      "113"     "12"
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>ls
+20Oct.r             Data_wrangling.R            Ricker.R      Vectorize2.R         histogram.R       trees_read_csv.r
+Baby_steps_21Oct.R  Florida.R                   Rplots.pdf    basic_io.R           pre-allocation.r  try.R
+DataWrang.R         IMPORTANT_Week03_R_17Oct.r  TreeHeight.R  browse.R             self_learn.r
+DataWrangTidy.R     PoundHill.R                 Vectorize1.R  florida_writeup.tex  trees.csv
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>Rscript DataWrangTidy.R
+     V1                     V2        V3        V4        V5        V6
+[1,] "Cultivation"          "october" "october" "october" "october" "october"
+[2,] "Block"                "a"       "a"       "a"       "a"       "a"
+[3,] "Plot"                 "1"       "1"       "1"       "1"       "1"
+[4,] "Quadrat"              "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] "Achillea millefolium" "4"       "8"       "3"       "20"      "6"
+[6,] "Agrostis gigantea"    ""        ""        ""        ""        "15"
+     V7    V8    V9    V10   V11   V12     V13     V14     V15     V16
+[1,] "may" "may" "may" "may" "may" "march" "march" "march" "march" "march"
+[2,] "a"   "a"   "a"   "a"   "a"   "a"     "a"     "a"     "a"     "a"
+[3,] "2"   "2"   "2"   "2"   "2"   "3"     "3"     "3"     "3"     "3"
+[4,] "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"
+[5,] "4"   ""    ""    ""    ""    "1"     "2"     "5"     "12"    "2"
+[6,] ""    ""    ""    ""    "2"   "8"     ""      "53"    "16"    "47"
+     V17     V18   V19   V20   V21   V22   V23     V24     V25     V26
+[1,] "march" "may" "may" "may" "may" "may" "march" "march" "march" "march"
+[2,] "a"     "b"   "b"   "b"   "b"   "b"   "b"     "b"     "b"     "b"
+[3,] "3"     "4"   "4"   "4"   "4"   "4"   "5"     "5"     "5"     "5"
+[4,] "Q6"    "Q1"  "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"
+[5,] ""      ""    ""    ""    ""    ""    "3"     "8"     "3"     "7"
+[6,] "12"    "68"  "57"  "83"  "88"  "89"  "10"    "29"    "24"    "24"
+     V27     V28       V29       V30       V31       V32     V33     V34
+[1,] "march" "october" "october" "october" "october" "march" "march" "march"
+[2,] "b"     "b"       "b"       "b"       "b"       "c"     "c"     "c"
+[3,] "5"     "6"       "6"       "6"       "6"       "7"     "7"     "7"
+[4,] "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q1"    "Q2"    "Q3"
+[5,] "20"    "1"       ""        "3"       "1"       "24"    "26"    "37"
+[6,] "43"    "143"     "39"      "10"      "67"      "62"    "22"    "37"
+     V35     V36     V37       V38       V39       V40       V41       V42
+[1,] "march" "march" "october" "october" "october" "october" "october" "may"
+[2,] "c"     "c"     "c"       "c"       "c"       "c"       "c"       "c"
+[3,] "7"     "7"     "8"       "8"       "8"       "8"       "8"       "9"
+[4,] "Q4"    "Q5"    "Q1"      "Q2"      "Q3"      "Q4"      "Q5"      "Q1"
+[5,] "37"    "100"   "2"       ""        ""        "1"       ""        ""
+[6,] "4"     "27"    "198"     "96"      "99"      "48"      "351"     "57"
+     V43   V44   V45   V46   V47     V48     V49     V50     V51     V52
+[1,] "may" "may" "may" "may" "march" "march" "march" "march" "march" "march"
+[2,] "c"   "c"   "c"   "c"   "d"     "d"     "d"     "d"     "d"     "d"
+[3,] "9"   "9"   "9"   "9"   "10"    "10"    "10"    "10"    "10"    "10"
+[4,] "Q2"  "Q3"  "Q4"  "Q5"  "Q1"    "Q2"    "Q3"    "Q4"    "Q5"    "Q6"
+[5,] ""    "7"   ""    "5"   "7"     "2"     "2"     "9"     "4"     "10"
+[6,] "41"  "65"  "38"  "45"  "259"   "33"    "96"    "291"   "19"    "80"
+     V53   V54   V55   V56       V57       V58       V59       V60
+[1,] "may" "may" "may" "october" "october" "october" "october" "october"
+[2,] "d"   "d"   "d"   "d"       "d"       "d"       "d"       "d"
+[3,] "12"  "12"  "12"  "11"      "11"      "11"      "11"      "11"
+[4,] "Q1"  "Q2"  "Q4"  "Q1"      "Q2"      "Q3"      "Q4"      "Q5"
+[5,] ""    ""    ""    ""        ""        "12"      "6"       "5"
+[6,] "33"  "145" "45"  "62"      "25"      "57"      "113"     "12"
+[1] 45 60
+ chr [1:45, 1:60] "Cultivation" "Block" "Plot" "Quadrat" ...
+ - attr(*, "dimnames")=List of 2
+  ..$ : NULL
+  ..$ : chr [1:60] "V1" "V2" "V3" "V4" ...
+   [,1]          [,2]    [,3]   [,4]      [,5]
+V1 "Cultivation" "Block" "Plot" "Quadrat" "Achillea millefolium"
+V2 "october"     "a"     "1"    "Q1"      "4"
+V3 "october"     "a"     "1"    "Q2"      "8"
+V4 "october"     "a"     "1"    "Q3"      "3"
+V5 "october"     "a"     "1"    "Q4"      "20"
+V6 "october"     "a"     "1"    "Q5"      "6"
+   [,6]                [,7]                 [,8]
+V1 "Agrostis gigantea" "Anagallis arvensis" "Anchusa arvensis"
+V2 ""                  ""                   ""
+V3 ""                  ""                   "3"
+V4 ""                  ""                   "1"
+V5 ""                  ""                   "1"
+V6 "15"                ""                   ""
+   [,9]                 [,10]               [,11]
+V1 "Anisantha sterilis" "Aphanes australis" "Artemesia vulgaris"
+V2 ""                   ""                  ""
+V3 ""                   ""                  ""
+V4 ""                   ""                  "2"
+V5 ""                   ""                  ""
+V6 "5"                  ""                  ""
+   [,12]              [,13]                  [,14]
+V1 "Bromus hordaceus" "Cerastium glomeratun" "Chenopodium album"
+V2 ""                 ""                     ""
+V3 ""                 "2"                    ""
+V4 ""                 "1"                    ""
+V5 ""                 ""                     ""
+V6 ""                 ""                     ""
+   [,15]             [,16]               [,17]               [,18]
+V1 "Cirsium arvense" "Conyza canadensis" "Crepis capillaris" "Crepis paludos"
+V2 ""                ""                  ""                  ""
+V3 "5"               ""                  ""                  ""
+V4 ""                ""                  ""                  ""
+V5 ""                ""                  ""                  ""
+V6 ""                ""                  ""                  ""
+   [,19]              [,20]                [,21]
+V1 "Elytrigia repens" "Epilobium ciliatum" "Erodium cicutarium"
+V2 ""                 "1"                  ""
+V3 ""                 ""                   ""
+V4 ""                 ""                   ""
+V5 ""                 ""                   ""
+V6 ""                 ""                   ""
+   [,22]                  [,23]           [,24]            [,25]
+V1 "Fallopia convolvulus" "Festuca rubra" "Geranium molle" "Holcus mollis"
+V2 ""                     ""              ""               "159"
+V3 ""                     ""              ""               "81"
+V4 ""                     ""              ""               "144"
+V5 ""                     ""              ""               "124"
+V6 ""                     ""              ""               "115"
+   [,26]                  [,27]              [,28]
+V1 "Hypochaeris radicata" "Lactuca serriola" "Medicago lupulina "
+V2 ""                     ""                 ""
+V3 ""                     ""                 ""
+V4 ""                     ""                 ""
+V5 ""                     ""                 ""
+V6 ""                     ""                 ""
+   [,29]               [,30]                  [,31]
+V1 "Myosotis arvensis" "Plantago lanceolata " "Polpaver dubium"
+V2 ""                  ""                     ""
+V3 ""                  ""                     ""
+V4 ""                  ""                     ""
+V5 ""                  ""                     ""
+V6 ""                  ""                     ""
+   [,32]                    [,33]              [,34]
+V1 "Raphanus raphanistrum " "Rumex acetosella" "Rumex crispus"
+V2 ""                       "25"               ""
+V3 ""                       ""                 ""
+V4 ""                       ""                 ""
+V5 ""                       "6"                ""
+V6 ""                       "1"                ""
+   [,35]               [,36]              [,37]           [,38]
+V1 "Rumex obtusifolia" "Semecio jacobaea" "Sonchus asper" "Spergula arvensis"
+V2 ""                  ""                 ""              ""
+V3 ""                  ""                 ""              ""
+V4 ""                  ""                 ""              ""
+V5 ""                  ""                 ""              ""
+V6 ""                  ""                 ""              ""
+   [,39]                [,40]                  [,41]
+V1 "Stellaria graminea" "Taraxacum officinale" "Tripleurospermum inodorum "
+V2 "8"                  ""                     "11"
+V3 "4"                  ""                     "1"
+V4 "1"                  ""                     ""
+V5 ""                   ""                     ""
+V6 "1"                  "10"                   ""
+   [,42]               [,43]              [,44]            [,45]
+V1 "Veronica arvensis" "Veronica persica" "Viola arvensis" "Vulpia myuros "
+V2 ""                  "1"                ""               ""
+V3 ""                  ""                 "3"              ""
+V4 ""                  ""                 "1"              ""
+V5 ""                  ""                 "1"              ""
+V6 ""                  ""                 ""               "7"
+[1] 60 45
+[1] "---------Now I want to use tidyr: ------------"
+Loading required package: tidyr
+starting httpd help server ... done
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week03\Code>

@@ -84,15 +84,17 @@ fix(MyMetaData1)
 
 ######### Transpose #########
 # To get those species into columns and treatments into rows 
-MyData1 <- t(MyData1) 
-head(MyData1)
-dim(MyData1)
+MyData2 <- t(MyData1)             # where is your eye???????????????? t(matrix or data.frame)
+head(MyData2)
+dim(MyData2)
 ##### Replace species absences with zeros ######
-MyData1[MyData1 == ""] = 0    # O_O
+MyData2[MyData2 == ""] = 0    # O_O
 
 #### Convert raw matrix to data frame ######
-TempData1 <- as.data.frame(MyData1[-1,],stringsAsFactors1 = F) #stringsAsFactors = F is important!
-colnames(TempData1) <- MyData1[1,] # assign column names from original data
+TempData1 <- as.data.frame(MyData2[-1,],stringsAsFactors1 = F) #stringsAsFactors = F is important!
+colnames(TempData1) <- MyData2[1,] # assign column names from original data
+
+
 
 print("---------Now I want to use tidyr: ------------")
 #### Convert from wide to long format - use gather() to get the key-value pair #####
