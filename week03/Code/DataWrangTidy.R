@@ -101,7 +101,7 @@ require(tidyr) # load the reshape2 package
 ?gather #check out the melt function, which is inside of the gather() package   # now I run here 27 Oct 17:06 win Rstudio 
 
 
-
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!undone!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
