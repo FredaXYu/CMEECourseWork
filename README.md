@@ -27,5 +27,6 @@ You may use ideas, but you should contribute it to correct resource. -- YU Xiaoy
 - Where to submit our coursework? Only Github? Put a link? 
 - Disappear with your classmates
 
+- I REFUSE BEING DRAGGED BY TRICKY PROBLEMS. I DON'T HAVE YEARS TO WAIT. I DON'T HAVE TIME TO PLAY. 
 
 
