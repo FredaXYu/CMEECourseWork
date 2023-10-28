@@ -1,0 +1,133 @@
+
+
+Microsoft Windows [版本 10.0.19045.2486]
+(c) Microsoft Corporation。保留所有权利。
+
+C:\Users\yxy>ls
+'ls' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+C:\Users\yxy>python python_packages_computing.py
+python: can't open file 'python_packages_computing.py': [Errno 2] No such file or directory
+
+C:\Users\yxy>ls
+'ls' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+C:\Users\yxy>cd ../
+
+C:\Users>cd ysy
+系统找不到指定的路径。
+
+C:\Users>cd yxy
+
+C:\Users\yxy>dir
+ 驱动器 C 中的卷是 c_win10
+ 卷的序列号是 2CC3-BB5C
+
+ C:\Users\yxy 的目录
+
+2023/10/22  22:19    <DIR>          .
+2023/10/22  22:19    <DIR>          ..
+2023/08/16  05:22               185 .gitconfig
+2023/02/01  16:18    <DIR>          .idlerc
+2023/02/01  14:33    <DIR>          .ipython
+2023/02/01  14:58    <DIR>          .jupyter
+2023/02/01  17:17    <DIR>          .matplotlib
+2023/07/05  11:18    <DIR>          .vscode
+2023/10/21  18:33    <DIR>          .vscode-R
+2023/02/01  12:38    <DIR>          3D Objects
+2023/02/01  12:38    <DIR>          Contacts
+2023/10/27  18:58    <DIR>          Desktop
+2023/09/13  14:22    <DIR>          Documents
+2023/10/28  18:46    <DIR>          Downloads
+2023/02/01  12:38    <DIR>          Favorites
+2023/10/07  11:47    <DIR>          Github_desktop
+2023/02/01  12:38    <DIR>          Links
+2023/09/05  10:58    <DIR>          Music
+2023/02/01  12:40    <DIR>          OneDrive
+2023/09/25  08:56    <DIR>          Pictures
+2023/02/01  12:38    <DIR>          Saved Games
+2023/02/01  12:39    <DIR>          Searches
+2023/04/27  02:14    <DIR>          Videos
+               1 个文件            185 字节
+              22 个目录 101,700,009,984 可用字节
+
+C:\Users\yxy>cd Github_desktop
+
+C:\Users\yxy\Github_desktop>dir
+ 驱动器 C 中的卷是 c_win10
+ 卷的序列号是 2CC3-BB5C
+
+ C:\Users\yxy\Github_desktop 的目录
+
+2023/10/07  11:47    <DIR>          .
+2023/10/07  11:47    <DIR>          ..
+2023/10/25  18:25    <DIR>          CMEECourseWork
+               0 个文件              0 字节
+               3 个目录 101,700,009,984 可用字节
+
+C:\Users\yxy\Github_desktop>cd CMEECourseWork
+
+C:\Users\yxy\Github_desktop\CMEECourseWork>dir
+ 驱动器 C 中的卷是 c_win10
+ 卷的序列号是 2CC3-BB5C
+
+ C:\Users\yxy\Github_desktop\CMEECourseWork 的目录
+
+2023/10/25  18:25    <DIR>          .
+2023/10/25  18:25    <DIR>          ..
+2023/10/20  22:24                10 .gitignore
+2023/10/24  15:34             1,169 README.md
+2023/10/26  20:57    <DIR>          seminars
+2023/10/25  18:25    <DIR>          week01
+2023/10/25  18:26    <DIR>          week02
+2023/10/25  18:26    <DIR>          week03
+2023/10/25  18:27    <DIR>          week04
+2023/10/16  16:34    <DIR>          week06
+               2 个文件          1,179 字节
+               8 个目录 101,701,070,848 可用字节
+
+C:\Users\yxy\Github_desktop\CMEECourseWork>cd week02
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week02>dir
+ 驱动器 C 中的卷是 c_win10
+ 卷的序列号是 2CC3-BB5C
+
+ C:\Users\yxy\Github_desktop\CMEECourseWork\week02 的目录
+
+2023/10/25  18:26    <DIR>          .
+2023/10/25  18:26    <DIR>          ..
+2023/10/24  18:45    <DIR>          Code
+2023/10/22  21:47    <DIR>          Data
+2023/10/28  18:37    <DIR>          Mycodes
+2023/10/16  16:33    <DIR>          Notes
+2023/10/16  16:33             1,636 Readme.md
+2023/10/24  15:34    <DIR>          Records
+2023/10/20  22:16    <DIR>          Results
+2023/10/16  16:33    <DIR>          Sandbox
+               1 个文件          1,636 字节
+               9 个目录 101,701,070,848 可用字节
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week02>cd Mycodes
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week02\Mycodes>dir
+ 驱动器 C 中的卷是 c_win10
+ 卷的序列号是 2CC3-BB5C
+
+ C:\Users\yxy\Github_desktop\CMEECourseWork\week02\Mycodes 的目录
+
+2023/10/28  18:37    <DIR>          .
+2023/10/28  18:37    <DIR>          ..
+2023/10/28  18:42               149 python_packages_computing.py
+               1 个文件            149 字节
+               2 个目录 101,700,939,776 可用字节
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week02\Mycodes>python python_packages_computing.py
+[ 0.47143516 -1.19097569  1.43270697 -0.3126519  -0.72058873  0.88716294
+  0.85958841 -0.6365235   0.01569637 -2.24268495]
+
+C:\Users\yxy\Github_desktop\CMEECourseWork\week02\Mycodes>
+
+
+
