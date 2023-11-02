@@ -14,70 +14,81 @@
 
 # I guess you assume the heights of all the trees are the same. 
 
-# my function: 
-loads_tree_height <- function(path) {
-    # https://www.geeksforgeeks.org/how-to-import-a-csv-file-into-r/
+# my function, unfinished: 
+# loads_tree_height <- function(path) {
+#     # https://www.geeksforgeeks.org/how-to-import-a-csv-file-into-r/
+# 
+#     ## if the path is a string and reaaaally a path:   
+#     # specifying the path 
+#     
+#     # reading contents of csv file 
+#     content <- read.csv(path) 
+#     print(paste("length of content dataframe read is: ", length(content[1])))
+#     return (content)
+# }        # unfinished 
 
-    ## if the path is a string and reaaaally a path:   
-    # specifying the path 
-    
-    # reading contents of csv file 
-    content <- read.csv(path) 
-    return (content)
-}        # unfinished 
+# print(class(content))
 
-print(class(content))
-
-print(loads_tree_height("../Data/trees.csv"))       # always this problem!!!!!!!  # solved on 22 Oct by trying
+# print(loads_tree_height("../Data/trees.csv"))   works
+csv_content <- read.csv("../Data/trees.csv", header=TRUE)
+print(paste("class(csv_content) is ", class(csv_content)))   # data.frame
+print(paste("length(csv_content) is ", length(csv_content))) # 3
 
 ### teacher's codes
 
-# TreeHeight <- function(degrees, distance) {
-#     radians <- degrees * pi / 180       # formula good!!!!
-#     height <- distance * tan(radians)    # this is just the unit
-    
-#     print(paste("Tree height is:", height))
-  
-#     return (height)
-# }
-
-
-## My edited: 
 TreeHeight <- function(degrees, distance) {
-    loads_tree_height("../Data/trees.csv")
-
-    radians <- degrees * pi / 180       # formula good!!!!!
+    radians <- degrees * pi / 180       # formula
     height <- distance * tan(radians)    # this is just the unit
-    
     print(paste("Tree height is:", height))
-  
     return (height)
 }
 
-print("TreeHeight")
-TreeHeight(37, 40)
+get_each_tree_ht <- function(csv_ct)
+{
+  vect <- vector()
+  for (each_df in csv_ct)
+  {
+    each_tree_ht = TreeHeight(csv_content$Angle.degrees, csv_content$Distance.m)
+    vect <- c(vect, each_tree_ht) # concatenate
+  }
+  return(vect)
+}
+
+tree_ht <- get_each_tree_ht(csv_content)
+print(paste("get_each_tree_ht", tree_ht))
+
+
+# print("TreeHeight")
+# TreeHeight(37, 40)
 print("here")
 
 # the empty object to be output
+
+# Method 1: 
 # Firstly create a matrix, then use it in the dataframe: https://www.geeksforgeeks.org/how-to-create-an-empty-dataframe-in-r/
-zero_matrix <- matrix(ncol = 0, nrow = 0) 
+zero_matrix <- matrix(ncol = ncol(csv_content), nrow = nrow(csv_content)) 
+print("here2")
+
+# Method 2: 
+# create a new col in the original dataframe: https://www.geeksforgeeks.org/how-to-add-column-to-dataframe-in-r/
+
+# adding a new column to the data frame using $ symbol 
+print(paste(length(tree_ht), length(csv_content$Species)))  # not equal???????????????? Problem here 1 Nov 
+csv_content$tree.height.m <- c(tree_ht)    # errors: replacement has 360 rows, data has 120
+
+print("here3")
+print(csv_content)
 
 MyDF = as.data.frame(zero_matrix)
 # print("MyDF", MyDF)
-print("zero_matrix", zero_matrix)
-output_object <- data.frame(zero_matrix)
-print("output_object", output_object)
-
-# content_output
+# print("zero_matrix", zero_matrix)
+# output_object <- data.frame(zero_matrix)
+# print("output_object", output_object)
 
 
+# content_output: 
 
 #save all data to csv file in results/
 # write.csv: x: the object to be written, preferably a matrix or data frame
-write.csv(output_content, paste("../Results/", "Output_TreeHeight.csv", sep=""), row.names=FALSE)  # cr. https://github.com/tashramsden/CMEECourseWork/blob/master/week3/code/get_TreeHeight.R
-
-write.csv(tree, "../Results/TreeHts.csv") 
-
-# use the function provided by teacher: 
-data <- TreeHeight(TreeData$Angle.degrees, TreeData$Distance.m)
+write.csv(csv_content, paste("../Results/", "TreeHts.csv", sep=""), row.names=FALSE)  
 
