@@ -16,7 +16,7 @@ import ipdb
 
 
 # Two example sequences to match
-seq2 = "ATCGCCGGATTACGGG"
+seq2 = "ATCGCCGGATTACGGG"      # we align only one strand of the DNA, since once one strand is given , the other is known. 
 seq1 = "CAATTCGGAT"
 
 # Assign the longer sequence s1, and the shorter to s2
@@ -45,13 +45,13 @@ def calculate_score(s1, s2, l1, l2, startpoint):
 
     '''  me
     Parameters: 
-        s1:
-        s2:
-        l1: 
-        l2:
-        startpoint: You choose a startpoint I guess is on the longer DNA
+        s1: the longer string, data type is 
+        s2: the shorter string, data type is 
+        l1: length of the longer string, data type is 
+        l2: length of the shorter string, data type is 
+        startpoint: The user chooses a startpoint I guess is on the longer DNA
     Output: 
-        score: 
+        score: a numerical value 
 
     '''
 
@@ -73,7 +73,7 @@ def calculate_score(s1, s2, l1, l2, startpoint):
             
     print("Look here: ", "." * startpoint + s2)   # CAATTCGGAT
     
-    print("s1: : ",s1)
+    print("s1: ",s1)
     
     print("score: ", score) 
     

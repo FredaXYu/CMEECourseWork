@@ -13,7 +13,7 @@ debug_python(20)
     # c is to ?
     # import ipdf
 
-ipdb.set_trace()
+ipdb.set_trace()    # debugger 
 
 
 #######################################
