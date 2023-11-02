@@ -30,7 +30,8 @@
 # print(class(content))
 
 # print(loads_tree_height("../Data/trees.csv"))   works
-csv_content <- read.csv("../Data/trees.csv", header=TRUE)
+csv_content <- read.csv("../Data/trees.csv", header=TRUE)  # read the csv file
+
 print(paste("class(csv_content) is ", class(csv_content)))   # data.frame
 print(paste("length(csv_content) is ", length(csv_content))) # 3
 
@@ -43,6 +44,7 @@ TreeHeight <- function(degrees, distance) {
     return (height)
 }
 
+# my: 
 get_each_tree_ht <- function(csv_ct)
 {
   vect <- vector()
@@ -51,11 +53,12 @@ get_each_tree_ht <- function(csv_ct)
     each_tree_ht = TreeHeight(csv_content$Angle.degrees, csv_content$Distance.m)
     vect <- c(vect, each_tree_ht) # concatenate
   }
-  return(vect)
+  tree_h_df <- as.data.frame(vect)    # MUST transform the vector into dataframe!! Otherwise I got 360 datas! 
+  return(tree_h_df)
 }
 
 tree_ht <- get_each_tree_ht(csv_content)
-print(paste("get_each_tree_ht", tree_ht))
+print(paste("length of get_each_tree_ht", length(tree_ht)))
 
 
 # print("TreeHeight")
@@ -72,12 +75,18 @@ print("here2")
 # Method 2: 
 # create a new col in the original dataframe: https://www.geeksforgeeks.org/how-to-add-column-to-dataframe-in-r/
 
+
 # adding a new column to the data frame using $ symbol 
-print(paste(length(tree_ht), length(csv_content$Species)))  # not equal???????????????? Problem here 1 Nov 
-csv_content$tree.height.m <- c(tree_ht)    # errors: replacement has 360 rows, data has 120
+print(paste(length(tree_ht), length(csv_content$Species)))  # not equal????????? Problem here 1 Nov 
+
+if (length(tree_ht) == length(csv_content$Species))
+{
+  csv_content$tree.height.m <- c(tree_ht)    # errors: replacement has 360 rows, data has 120
+} else {print("Caution   length(tree_ht) != length(csv_content$Species)")}   # error handling  stuck here 1 Nov
+
 
 print("here3")
-print(csv_content)
+# print(csv_content)
 
 MyDF = as.data.frame(zero_matrix)
 # print("MyDF", MyDF)
@@ -89,6 +98,11 @@ MyDF = as.data.frame(zero_matrix)
 # content_output: 
 
 #save all data to csv file in results/
-# write.csv: x: the object to be written, preferably a matrix or data frame
 write.csv(csv_content, paste("../Results/", "TreeHts.csv", sep=""), row.names=FALSE)  
 
+
+#####
+# Error in utils::write.table(csv_content, paste("../Results/", "TreeHts.csv",  :
+#                                                  unimplemented type 'list' in 'EncodeElement'
+#                                                Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous>
+#                                                  Execution halted
