@@ -27,7 +27,6 @@ loads_tree_height <- function(path) {
 }        # unfinished 
 
 print(class(content))
-print(class(content$))
 
 print(loads_tree_height("../Data/trees.csv"))       # always this problem!!!!!!!  # solved on 22 Oct by trying
 
@@ -72,9 +71,10 @@ print("output_object", output_object)
 # content_output
 
 
+
 #save all data to csv file in results/
 # write.csv: x: the object to be written, preferably a matrix or data frame
-write.csv(output_content, paste("../Results/", name, "Output_TreeHeight.csv", sep=""), row.names=FALSE)  # cr. https://github.com/tashramsden/CMEECourseWork/blob/master/week3/code/get_TreeHeight.R
+write.csv(output_content, paste("../Results/", "Output_TreeHeight.csv", sep=""), row.names=FALSE)  # cr. https://github.com/tashramsden/CMEECourseWork/blob/master/week3/code/get_TreeHeight.R
 
 write.csv(tree, "../Results/TreeHts.csv") 
 
