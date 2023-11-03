@@ -35,8 +35,7 @@ csv_content <- read.csv("../Data/trees.csv", header=TRUE)  # read the csv file
 print(paste("class(csv_content) is ", class(csv_content)))   # data.frame
 print(paste("length(csv_content) is ", length(csv_content))) # 3
 
-### teacher's codes
-
+########### teacher's codes
 TreeHeight <- function(degrees, distance) {
     radians <- degrees * pi / 180       # formula
     height <- distance * tan(radians)    # this is just the unit
@@ -67,12 +66,12 @@ print("here")
 
 # the empty object to be output
 
-# Method 1: 
+########################## Method 1:
 # Firstly create a matrix, then use it in the dataframe: https://www.geeksforgeeks.org/how-to-create-an-empty-dataframe-in-r/
 zero_matrix <- matrix(ncol = ncol(csv_content), nrow = nrow(csv_content)) 
 print("here2")
 
-# Method 2: 
+########################## Method 2:
 # create a new col in the original dataframe: https://www.geeksforgeeks.org/how-to-add-column-to-dataframe-in-r/
 
 
@@ -94,6 +93,20 @@ MyDF = as.data.frame(zero_matrix)
 # output_object <- data.frame(zero_matrix)
 # print("output_object", output_object)
 
+########################## Method 3: 
+# use $ to operate on the whole columns
+
+TreeHeight <- function(degrees, distance) {
+  radians <- degrees * pi / 180       # formula
+  height <- distance * tan(radians)    # this is just the unit
+  print(paste("Tree height is:", height))
+  return (height)
+}
+
+new <- TreeHeight(csv_content$Angle.degrees, csv_content$Distance.m)
+
+csv_content$tree.height.m <- new    # append the new column, it works fine 3 Nov
+
 
 # content_output: 
 
@@ -101,8 +114,3 @@ MyDF = as.data.frame(zero_matrix)
 write.csv(csv_content, paste("../Results/", "TreeHts.csv", sep=""), row.names=FALSE)  
 
 
-#####
-# Error in utils::write.table(csv_content, paste("../Results/", "TreeHts.csv",  :
-#                                                  unimplemented type 'list' in 'EncodeElement'
-#                                                Calls: write.csv -> eval.parent -> eval -> eval -> <Anonymous>
-#                                                  Execution halted
