@@ -24,9 +24,7 @@ You may use ideas, but you should contribute it to correct resource. -- YU Xiaoy
 - Cook colourful meals. 
 - Use my earphone. 
 - Check the Coursework assignment requirement, and print/write down each point to be marked to get scores. 
-- Where to submit our coursework? Only Github? Put a link? 
-- Disappear with your classmates
 
-- I REFUSE BEING DRAGGED BY TRICKY PROBLEMS. I DON'T HAVE YEARS TO WAIT. I DON'T HAVE TIME TO PLAY. 
+
 
 

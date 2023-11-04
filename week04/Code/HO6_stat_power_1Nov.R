@@ -32,6 +32,12 @@ wp.t(d=0.25, power=0.8, type="two.sample", alternative="two.sided")
 ## NOTE: n is number in *each* group
 ## URL: http://psychstat.org/ttest
 
+res.1<-wp.t(n1=seq(20,300,20), n2=seq(20,300,20), d=0.25, type="two.sample.2n
+", alternative="two.sided")
+res.1
+
+plot(res.1, xvar='n1', yvar='power')
+
 
 
 
