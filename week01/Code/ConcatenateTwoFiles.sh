@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # https://mhasoba.github.io/TheMulQuaBio/notebooks/02-ShellScripting.html  tag: A useful shell-scripting example
 

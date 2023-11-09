@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # the FASTA practical coursework
 
@@ -6,7 +7,7 @@
 
 ##########################################################################################
 
-# test  - I can make it as a class
+# test 
 echo -e "\nThis is a shell script! \n"
 
 

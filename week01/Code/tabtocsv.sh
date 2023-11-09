@@ -1,6 +1,6 @@
 
 #!/bin/sh
-# Author: Your name you.login@imperial.ac.uk
+# Author: xiaoyun.yu23@imperial.ac.uk
 # Script: tabtocsv.sh
 # Description: substitute the tabs in the files with commas
 #

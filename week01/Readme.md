@@ -46,6 +46,11 @@ https://mhasoba.github.io/TheMulQuaBio/notebooks/04-LaTeX.html#practicals-wrap-u
 ### Unfinished Files: 
 
 
+### Useful Websites: 
+https://www.runoob.com/linux/linux-command-manual.html
+
+
+
 
 
 
