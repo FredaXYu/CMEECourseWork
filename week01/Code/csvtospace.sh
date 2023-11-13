@@ -15,7 +15,10 @@ done
 
 exit
 
+# method 1 inspiration    cat $1 | tr -s "\t" "," >> $1.csv
+
 # Method 2: useing sed
+
 
 # Dr. Pawar's codes for this task: 
 # tabtocsv.sh:

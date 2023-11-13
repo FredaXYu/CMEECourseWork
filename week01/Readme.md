@@ -43,12 +43,23 @@ https://mhasoba.github.io/TheMulQuaBio/notebooks/04-LaTeX.html#practicals-wrap-u
  [**boilerplate.sh**](Code/boilerplate.sh)
   * This is the description. 
 
-### Unfinished Files: 
+  
 
+### Unfinished Files: 
+fasta.sh
 
 ### Useful Websites: 
 https://www.runoob.com/linux/linux-command-manual.html
 
+### Notes: 
+
+----------------------------------------------------------------------------
+ [IMPORTANT] Because some of the scripts are written under Windows system, 
+ please ---- type and run the below line of sentence in command line before run this script: 
+
+ sed -i 's/\r//' tabtocsv.sh
+
+----------------------------------------------------------------------------
 
 
 
