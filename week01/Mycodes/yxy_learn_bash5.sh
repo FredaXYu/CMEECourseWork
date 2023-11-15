@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Created date: 13 Nov 2023
-# Purpose: to learn how to calculate the length of a variable
+# Purpose: to learn how to calculate the length of a variable; substitution; touch files
 
 #----------------------------------------------------------------------------
 # [IMPORTANT] Because this script is written under Windows system, 
@@ -13,14 +13,28 @@ seq 10      # generate a sequence from 1 to 10, separated by lines
 
 seq -s ":" 10    # from 1 to 10, in one line, separated by :    1:2:3:4:5:6:7:8:9:10
 
-for num in {1..3};      # do three times
+for num in {1..3};      # do three times - print out the 1^2^3^4^5^6^7^8^9^10 three times
 do 
     # echo num
     str1=`seq -s "^" 10`;      # print out the variables  
     echo $str1;         # 1^2^3^4^5^6^7^8^9^10
 done
 
+#------------------------------
+# substitute strings: 
 
+str_my="Hello you you, i am your sister. "
+echo $str_my
+
+echo ${str_my/you/girl}        # substitute only once
+echo ${str_my//you/girl}       # substitute all which match the 'you' into 'girl'
+echo ${str_my/o/O}             # substitute only once, from o to O
+echo ${str_my//o/O}            # substitute all, from o to O
+
+#------------------------------
+# create files: 
+touch ../Mydata/yxy_{1..5}_finished.jpg    # numbered from 1 to 5, five files, with .jpg as appendix
+touch ../Mydata/yxy_{1..5}_finished.png    # numbered from 1 to 5, five files, with .png as appendix
 
 #---------------------------------------------
 # important notes
