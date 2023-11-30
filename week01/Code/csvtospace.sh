@@ -6,18 +6,29 @@
 # https://stackoverflow.com/questions/1271222/replace-whitespace-with-a-comma-in-a-text-file-in-linux
 
 
-# Method 1: using cat and tr
-for i in `ls ../Data/*.csv`; do
+### Method 1: using cat and tr
 
-    cat i | tr " " "," > i 
+# handle wrong or missing inputs: 
 
-done
+#------------------
+
+if [[ `ls ../Data/Temperatures/*.csv` ]]
+then
+    for i in `ls ../Data/Temperatures/*.csv`; do
+        cat $i | tr " " "," > $i.csv      # my01.csv.csv
+        echo $i.csv
+
+    done
+else 
+    echo "Wrong directory or file name. "
+fi
+
 
 exit
 
 # method 1 inspiration    cat $1 | tr -s "\t" "," >> $1.csv
 
-# Method 2: useing sed
+### Method 2: using sed
 
 
 # Dr. Pawar's codes for this task: 
